@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
+                <li><a href="/components">Component showcase</a></li>
             </ul>
         </nav>
     </header>

@@ -12,6 +12,10 @@ $router->addRoute('GET', '/', function() {
     View::render('home/index');
 });
 
+$router->addRoute('GET', '/components', function() {
+    View::render('components/index');
+});
+
 $router->addRoute('GET', '/about', function() {
     View::render('about/index');
 });
