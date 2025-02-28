@@ -14,8 +14,24 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/components">Component showcase</a></li>
-                <li><a href="/authentification/login">Login</a></li>
-                <li><a href="/authentification/logout">Logout</a></li>
+                
+                <!-- <?php
+                echo '<pre>';
+                echo 'Session ID: ' . session_id() . "\n";
+                echo 'Session Status: ' . session_status() . "\n";
+                echo 'Session Cookie Parameters: ';
+                var_dump(session_get_cookie_params());
+                echo 'Session Data: ';
+                var_dump($_SESSION);
+                echo '</pre>';
+                ?> -->
+
+                <?php if (isset($_SESSION['user'])): ?>
+                    <li style="color: white;">Welcome, <?= htmlspecialchars($_SESSION['user']['name']) ?></li>
+                    <li><a href="/authentification/logout">Logout</a></li>
+                <?php else: ?>
+                    <li><a href="/authentification/login">Login</a></li>
+                <?php endif; ?>
             </ul>
         </nav>
     </header>

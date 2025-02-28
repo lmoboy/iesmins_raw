@@ -1,15 +1,26 @@
 <?php
+if (!defined('DATABASE_INCLUDED')) {
+    define('DATABASE_INCLUDED', true);
+
 class Database
 {
-    private $host = 'localhost';
-    private $db_name = 'your_database';
-    private $username = 'root';
-    private $password = '';
+    private $host = DB_HOST;
+    private $db_name = DB_NAME;
+    private $username = DB_USER;
+    private $password = DB_PASS;
     private $conn;
+
+    private function debug_log($message, $type = 'info') {
+        if (!DEBUG_DB) return;
+        
+        $log_message = date('[Y-m-d H:i:s]') . " [DB] [{$type}] {$message}\n";
+        error_log($log_message, 3, DEBUG_LOG_FILE);
+    }
 
     public function connect()
     {
         $this->conn = null;
+        $this->debug_log("Attempting database connection");
 
         try {
             $this->conn = new PDO(
@@ -19,8 +30,14 @@ class Database
             );
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            $this->debug_log("Database connection successful");
         } catch (PDOException $e) {
-            echo 'Connection Error: ' . $e->getMessage();
+            $this->debug_log("Connection Error: " . $e->getMessage(), 'error');
+            if (DEBUG_MODE) {
+                echo 'Connection Error: ' . $e->getMessage();
+            } else {
+                echo 'Database connection error occurred. Please try again later.';
+            }
         }
 
         return $this->conn;
@@ -28,6 +45,8 @@ class Database
 
     public function generateTables()
     {
+        $this->debug_log("Generating database tables");
+        
         $sql = 'CREATE TABLE IF NOT EXISTS `users` (
             `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
             `name` varchar(255) NOT NULL,
@@ -37,6 +56,7 @@ class Database
         )';
 
         $this->query($sql);
+        $this->debug_log("Users table created/verified");
 
         $sql = 'CREATE TABLE IF NOT EXISTS `products` (
             `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -47,27 +67,43 @@ class Database
         )';
 
         $this->query($sql);
+        $this->debug_log("Products table created/verified");
     }
 
     public function query($sql, $params = [])
     {
-        $stmt = $this->conn->prepare($sql);
-        $stmt->execute($params);
-        return $stmt;
+        try {
+            $this->debug_log("Executing query: {$sql}");
+            if (!empty($params)) {
+                $this->debug_log("With parameters: " . json_encode($params));
+            }
+            
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute($params);
+            $this->debug_log("Query executed successfully");
+            return $stmt;
+        } catch (PDOException $e) {
+            $this->debug_log("Query Error: " . $e->getMessage(), 'error');
+            throw $e;
+        }
     }
 
     public function create($table, $data)
     {
+        $this->debug_log("Creating new record in {$table}");
         $fields = implode(', ', array_keys($data));
         $placeholders = ':' . implode(', :', array_keys($data));
 
         $sql = "INSERT INTO {$table} ({$fields}) VALUES ({$placeholders})";
         $this->query($sql, $data);
-        return $this->conn->lastInsertId();
+        $lastId = $this->conn->lastInsertId();
+        $this->debug_log("Created record with ID: {$lastId}");
+        return $lastId;
     }
 
     public function read($table, $conditions = [], $fields = '*')
     {
+        $this->debug_log("Reading from {$table}");
         $sql = "SELECT {$fields} FROM {$table}";
 
         if (!empty($conditions)) {
@@ -80,11 +116,14 @@ class Database
         }
 
         $stmt = $this->query($sql, $conditions);
-        return $stmt->fetchAll();
+        $result = $stmt->fetchAll();
+        $this->debug_log("Retrieved " . count($result) . " records");
+        return $result;
     }
 
     public function update($table, $data, $conditions)
     {
+        $this->debug_log("Updating record(s) in {$table}");
         $set = [];
         foreach ($data as $key => $value) {
             $set[] = "{$key} = :set_{$key}";
@@ -105,11 +144,14 @@ class Database
             $params["where_{$key}"] = $value;
         }
 
-        return $this->query($sql, $params);
+        $result = $this->query($sql, $params);
+        $this->debug_log("Updated " . $result->rowCount() . " records");
+        return $result;
     }
 
     public function delete($table, $conditions)
     {
+        $this->debug_log("Deleting record(s) from {$table}");
         $sql = "DELETE FROM {$table}";
 
         if (!empty($conditions)) {
@@ -121,6 +163,9 @@ class Database
             $sql .= implode(' AND ', $where);
         }
 
-        return $this->query($sql, $conditions);
+        $result = $this->query($sql, $conditions);
+        $this->debug_log("Deleted " . $result->rowCount() . " records");
+        return $result;
     }
+}
 }

@@ -1,0 +1,1353 @@
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:22:23] [ROUTER] [info] Handling request: POST /backend/authenticate
+[2025-02-28 08:22:23] [ROUTER] [info] Path matched: /backend/authenticate matches pattern \/backend\/authenticate
+[2025-02-28 08:22:23] [ROUTER] [info] Route matched: POST /backend/authenticate
+[2025-02-28 08:22:23] [AUTH] [info] Processing login attempt
+[2025-02-28 08:22:23] [AUTH] [warning] Login attempt failed: Empty username or password
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:22:23] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:22:23] [ROUTER] [info] Handling request: GET /authentification/login
+[2025-02-28 08:22:23] [ROUTER] [debug] Path not matched: /authentification/login does not match pattern \/backend\/migrate
+[2025-02-28 08:22:23] [ROUTER] [debug] Path not matched: /authentification/login does not match pattern \/examples\/products
+[2025-02-28 08:22:23] [ROUTER] [debug] Path not matched: /authentification/login does not match pattern \/
+[2025-02-28 08:22:23] [ROUTER] [debug] Path not matched: /authentification/login does not match pattern \/components
+[2025-02-28 08:22:23] [ROUTER] [debug] Path not matched: /authentification/login does not match pattern \/about
+[2025-02-28 08:22:23] [ROUTER] [info] Path matched: /authentification/login matches pattern \/authentification\/login
+[2025-02-28 08:22:23] [ROUTER] [info] Route matched: GET /authentification/login
+[2025-02-28 08:22:23] [VIEW] [info] Rendering view: authentification/login
+[2025-02-28 08:22:23] [VIEW] [info] Loading view file: views/authentification/login.php
+[2025-02-28 08:22:23] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:23:09] [ROUTER] [info] Handling request: POST /backend/authenticate
+[2025-02-28 08:23:09] [ROUTER] [info] Path matched: /backend/authenticate matches pattern \/backend\/authenticate
+[2025-02-28 08:23:09] [ROUTER] [info] Route matched: POST /backend/authenticate
+[2025-02-28 08:23:09] [AUTH] [info] Processing login attempt
+[2025-02-28 08:23:09] [AUTH] [info] Attempting authentication for user: admin@admin.admin
+[2025-02-28 08:23:09] [DB] [info] Attempting database connection
+[2025-02-28 08:23:09] [DB] [info] Database connection successful
+[2025-02-28 08:23:09] [AUTH] [info] Authentication successful for user: admin@admin.admin
+[2025-02-28 08:23:09] [AUTH] [info] Session regenerated for user: admin@admin.admin
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:23:09] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:23:09] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:23:09] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:23:09] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:23:09] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:23:09] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:23:09] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:23:09] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:23:09] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:23:55] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:23:55] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:23:55] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:23:55] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:23:55] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:23:55] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:23:55] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:23:55] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:23:55] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:23:55] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:23:55] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:23:55] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:23:55] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:23:55] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:23:55] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:23:55] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:24:31] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:24:31] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:24:31] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:24:31] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:24:31] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:24:31] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:24:31] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:24:31] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:24:31] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:24:31] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:24:31] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:24:31] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:24:31] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:24:31] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:24:31] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:24:31] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:25:44] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:25:44] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:25:44] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:25:44] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:25:44] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:25:44] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:25:44] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:25:44] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:25:44] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:25:44] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:25:44] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:25:44] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:25:44] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:25:44] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:25:44] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:25:44] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:26:44] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:26:44] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:26:44] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:26:44] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:26:44] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:26:44] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:26:44] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:26:44] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:26:44] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:26:44] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:26:44] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:26:44] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:26:44] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:26:44] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:26:44] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:26:44] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:27:02] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:27:02] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:27:02] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:27:02] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:27:02] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:27:02] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:27:02] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:27:02] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:27:02] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:27:02] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:27:02] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:27:02] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:27:02] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:27:02] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:27:02] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:27:02] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:27:32] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:27:32] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:27:32] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:27:32] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:27:32] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:27:32] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:27:32] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:27:32] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:27:32] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:27:32] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:27:32] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:27:32] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:27:32] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:27:32] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:27:32] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:27:32] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:29:52] [ROUTER] [info] Handling request: GET /authentification/logout
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/backend\/migrate
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/examples\/products
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/components
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/about
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/authentification\/login
+[2025-02-28 08:29:52] [ROUTER] [info] Path matched: /authentification/logout matches pattern \/authentification\/logout
+[2025-02-28 08:29:52] [ROUTER] [info] Route matched: GET /authentification/logout
+[2025-02-28 08:29:52] [VIEW] [info] Rendering view: authentification/logout
+[2025-02-28 08:29:52] [VIEW] [info] Loading view file: views/authentification/logout.php
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:29:52] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:29:52] [ROUTER] [info] Handling request: GET /authentification/login.php
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/login.php does not match pattern \/backend\/migrate
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/login.php does not match pattern \/examples\/products
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/login.php does not match pattern \/
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/login.php does not match pattern \/components
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/login.php does not match pattern \/about
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/login.php does not match pattern \/authentification\/login
+[2025-02-28 08:29:52] [ROUTER] [debug] Path not matched: /authentification/login.php does not match pattern \/authentification\/logout
+[2025-02-28 08:29:52] [ROUTER] [warning] No matching route found for: GET /authentification/login.php
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:30:42] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:30:42] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:30:42] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:30:42] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:30:42] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:30:42] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:30:42] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:30:42] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:30:42] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:30:42] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:30:42] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:30:42] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:30:42] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:30:42] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:30:42] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:30:42] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:30:42] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:30:44] [ROUTER] [info] Handling request: GET /authentification/logout
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/backend\/migrate
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/examples\/products
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/components
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/about
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/logout does not match pattern \/authentification\/login
+[2025-02-28 08:30:44] [ROUTER] [info] Path matched: /authentification/logout matches pattern \/authentification\/logout
+[2025-02-28 08:30:44] [ROUTER] [info] Route matched: GET /authentification/logout
+[2025-02-28 08:30:44] [VIEW] [info] Rendering view: authentification/logout
+[2025-02-28 08:30:44] [VIEW] [info] Loading view file: views/authentification/logout.php
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:30:44] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:30:44] [ROUTER] [info] Handling request: GET /authentification/login
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/login does not match pattern \/backend\/migrate
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/login does not match pattern \/examples\/products
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/login does not match pattern \/
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/login does not match pattern \/components
+[2025-02-28 08:30:44] [ROUTER] [debug] Path not matched: /authentification/login does not match pattern \/about
+[2025-02-28 08:30:44] [ROUTER] [info] Path matched: /authentification/login matches pattern \/authentification\/login
+[2025-02-28 08:30:44] [ROUTER] [info] Route matched: GET /authentification/login
+[2025-02-28 08:30:44] [VIEW] [info] Rendering view: authentification/login
+[2025-02-28 08:30:44] [VIEW] [info] Loading view file: views/authentification/login.php
+[2025-02-28 08:30:44] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:30:53] [ROUTER] [info] Handling request: POST /backend/authenticate
+[2025-02-28 08:30:53] [ROUTER] [info] Path matched: /backend/authenticate matches pattern \/backend\/authenticate
+[2025-02-28 08:30:53] [ROUTER] [info] Route matched: POST /backend/authenticate
+[2025-02-28 08:30:53] [AUTH] [info] Processing login attempt
+[2025-02-28 08:30:53] [AUTH] [info] Attempting authentication for user: admin@admin.admin
+[2025-02-28 08:30:53] [DB] [info] Attempting database connection
+[2025-02-28 08:30:53] [DB] [info] Database connection successful
+[2025-02-28 08:30:53] [AUTH] [info] Authentication successful for user: admin@admin.admin
+[2025-02-28 08:30:53] [AUTH] [info] Session regenerated for user: admin@admin.admin
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:30:53] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:30:53] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:30:53] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:30:53] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:30:53] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:30:53] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:30:53] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:30:53] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:30:53] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:34:08] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:08] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:08] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:08] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:08] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:08] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:08] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:08] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:08] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:08] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:08] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:08] [DB] [info] Attempting database connection
+[2025-02-28 08:34:08] [DB] [info] Database connection successful
+[2025-02-28 08:34:08] [DB] [info] Generating database tables
+[2025-02-28 08:34:08] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:08] [DB] [info] Query executed successfully
+[2025-02-28 08:34:08] [DB] [info] Users table created/verified
+[2025-02-28 08:34:08] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:08] [DB] [info] Query executed successfully
+[2025-02-28 08:34:08] [DB] [info] Products table created/verified
+[2025-02-28 08:34:08] [DB] [info] Creating new record in users
+[2025-02-28 08:34:08] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:08] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$7ilYYKsiybESp9pbvCLYf.B9AYz.fXUI5B562RntAl8yyigbvPYcy","role":0}
+[2025-02-28 08:34:08] [DB] [info] Query executed successfully
+[2025-02-28 08:34:08] [DB] [info] Created record with ID: 6
+[2025-02-28 08:34:08] [DB] [info] Creating new record in products
+[2025-02-28 08:34:08] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:08] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:08] [DB] [info] Query executed successfully
+[2025-02-28 08:34:08] [DB] [info] Created record with ID: 5
+[2025-02-28 08:34:08] [DB] [info] Reading from users
+[2025-02-28 08:34:08] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:08] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:08] [DB] [info] Query executed successfully
+[2025-02-28 08:34:08] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:08] [DB] [info] Reading from products
+[2025-02-28 08:34:08] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:08] [DB] [info] Query executed successfully
+[2025-02-28 08:34:08] [DB] [info] Retrieved 3 records
+[2025-02-28 08:34:08] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:08] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:08] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"6"}
+[2025-02-28 08:34:08] [DB] [info] Query executed successfully
+[2025-02-28 08:34:08] [DB] [info] Updated 1 records
+[2025-02-28 08:34:08] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:08] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:08] [DB] [info] With parameters: {"set_quantity":5,"where_id":"5"}
+[2025-02-28 08:34:08] [DB] [info] Query executed successfully
+[2025-02-28 08:34:08] [DB] [info] Updated 1 records
+[2025-02-28 08:34:08] [DB] [info] Reading from users
+[2025-02-28 08:34:08] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:08] [DB] [info] Query executed successfully
+[2025-02-28 08:34:08] [DB] [info] Retrieved 2 records
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:11] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:11] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:11] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:11] [DB] [info] Attempting database connection
+[2025-02-28 08:34:11] [DB] [info] Database connection successful
+[2025-02-28 08:34:11] [DB] [info] Generating database tables
+[2025-02-28 08:34:11] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Users table created/verified
+[2025-02-28 08:34:11] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Products table created/verified
+[2025-02-28 08:34:11] [DB] [info] Creating new record in users
+[2025-02-28 08:34:11] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:11] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$9h.3z6Ebtm9Ms2FYv3b\/xeJdtkh7rs3HomiGTTqTj7LZRFYXNjfla","role":0}
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Created record with ID: 7
+[2025-02-28 08:34:11] [DB] [info] Creating new record in products
+[2025-02-28 08:34:11] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:11] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Created record with ID: 6
+[2025-02-28 08:34:11] [DB] [info] Reading from users
+[2025-02-28 08:34:11] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:11] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:11] [DB] [info] Reading from products
+[2025-02-28 08:34:11] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Retrieved 4 records
+[2025-02-28 08:34:11] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:11] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:11] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"7"}
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Updated 1 records
+[2025-02-28 08:34:11] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:11] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:11] [DB] [info] With parameters: {"set_quantity":5,"where_id":"6"}
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Updated 1 records
+[2025-02-28 08:34:11] [DB] [info] Reading from users
+[2025-02-28 08:34:11] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Retrieved 3 records
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:11] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:11] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:11] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:11] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:11] [DB] [info] Attempting database connection
+[2025-02-28 08:34:11] [DB] [info] Database connection successful
+[2025-02-28 08:34:11] [DB] [info] Generating database tables
+[2025-02-28 08:34:11] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Users table created/verified
+[2025-02-28 08:34:11] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:11] [DB] [info] Query executed successfully
+[2025-02-28 08:34:11] [DB] [info] Products table created/verified
+[2025-02-28 08:34:12] [DB] [info] Creating new record in users
+[2025-02-28 08:34:12] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$XNJ5962k799PsAgdtWMGVuAWaUdnMAisGtiIE56dlKteJGBLTUzbe","role":0}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Created record with ID: 8
+[2025-02-28 08:34:12] [DB] [info] Creating new record in products
+[2025-02-28 08:34:12] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Created record with ID: 7
+[2025-02-28 08:34:12] [DB] [info] Reading from users
+[2025-02-28 08:34:12] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:12] [DB] [info] Reading from products
+[2025-02-28 08:34:12] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Retrieved 5 records
+[2025-02-28 08:34:12] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:12] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"8"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Updated 1 records
+[2025-02-28 08:34:12] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:12] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"set_quantity":5,"where_id":"7"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Updated 1 records
+[2025-02-28 08:34:12] [DB] [info] Reading from users
+[2025-02-28 08:34:12] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Retrieved 4 records
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:12] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:12] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:12] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:12] [DB] [info] Attempting database connection
+[2025-02-28 08:34:12] [DB] [info] Database connection successful
+[2025-02-28 08:34:12] [DB] [info] Generating database tables
+[2025-02-28 08:34:12] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Users table created/verified
+[2025-02-28 08:34:12] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Products table created/verified
+[2025-02-28 08:34:12] [DB] [info] Creating new record in users
+[2025-02-28 08:34:12] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$oZcnWsWrJCySIem996UCYe1.G923ELKehYirKDVEIKaCGieyk\/\/fq","role":0}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Created record with ID: 9
+[2025-02-28 08:34:12] [DB] [info] Creating new record in products
+[2025-02-28 08:34:12] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Created record with ID: 8
+[2025-02-28 08:34:12] [DB] [info] Reading from users
+[2025-02-28 08:34:12] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:12] [DB] [info] Reading from products
+[2025-02-28 08:34:12] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Retrieved 6 records
+[2025-02-28 08:34:12] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:12] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"9"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Updated 1 records
+[2025-02-28 08:34:12] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:12] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"set_quantity":5,"where_id":"8"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Updated 1 records
+[2025-02-28 08:34:12] [DB] [info] Reading from users
+[2025-02-28 08:34:12] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Retrieved 5 records
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:12] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:12] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:12] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:12] [DB] [info] Attempting database connection
+[2025-02-28 08:34:12] [DB] [info] Database connection successful
+[2025-02-28 08:34:12] [DB] [info] Generating database tables
+[2025-02-28 08:34:12] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Users table created/verified
+[2025-02-28 08:34:12] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Products table created/verified
+[2025-02-28 08:34:12] [DB] [info] Creating new record in users
+[2025-02-28 08:34:12] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$rjYg2ZAhga8vHksV\/\/SGxulTqwUrOlXMxrGu2gBDTklPCTUjyBhmq","role":0}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Created record with ID: 10
+[2025-02-28 08:34:12] [DB] [info] Creating new record in products
+[2025-02-28 08:34:12] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Created record with ID: 9
+[2025-02-28 08:34:12] [DB] [info] Reading from users
+[2025-02-28 08:34:12] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:12] [DB] [info] Reading from products
+[2025-02-28 08:34:12] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Retrieved 7 records
+[2025-02-28 08:34:12] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:12] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"10"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Updated 1 records
+[2025-02-28 08:34:12] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:12] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:12] [DB] [info] With parameters: {"set_quantity":5,"where_id":"9"}
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Updated 1 records
+[2025-02-28 08:34:12] [DB] [info] Reading from users
+[2025-02-28 08:34:12] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Retrieved 6 records
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:12] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:12] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:12] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:12] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:12] [DB] [info] Attempting database connection
+[2025-02-28 08:34:12] [DB] [info] Database connection successful
+[2025-02-28 08:34:12] [DB] [info] Generating database tables
+[2025-02-28 08:34:12] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Users table created/verified
+[2025-02-28 08:34:12] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:12] [DB] [info] Query executed successfully
+[2025-02-28 08:34:12] [DB] [info] Products table created/verified
+[2025-02-28 08:34:13] [DB] [info] Creating new record in users
+[2025-02-28 08:34:13] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:13] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$xc\/aNcH32GuZERNJcdizkOk9Y9hPJqHnsobtjYAYFvUxu3bn\/c\/YK","role":0}
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Created record with ID: 11
+[2025-02-28 08:34:13] [DB] [info] Creating new record in products
+[2025-02-28 08:34:13] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:13] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Created record with ID: 10
+[2025-02-28 08:34:13] [DB] [info] Reading from users
+[2025-02-28 08:34:13] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:13] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:13] [DB] [info] Reading from products
+[2025-02-28 08:34:13] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Retrieved 8 records
+[2025-02-28 08:34:13] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:13] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:13] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"11"}
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Updated 1 records
+[2025-02-28 08:34:13] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:13] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:13] [DB] [info] With parameters: {"set_quantity":5,"where_id":"10"}
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Updated 1 records
+[2025-02-28 08:34:13] [DB] [info] Reading from users
+[2025-02-28 08:34:13] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Retrieved 7 records
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:13] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:13] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:13] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:13] [DB] [info] Attempting database connection
+[2025-02-28 08:34:13] [DB] [info] Database connection successful
+[2025-02-28 08:34:13] [DB] [info] Generating database tables
+[2025-02-28 08:34:13] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Users table created/verified
+[2025-02-28 08:34:13] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Products table created/verified
+[2025-02-28 08:34:13] [DB] [info] Creating new record in users
+[2025-02-28 08:34:13] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:13] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$3PkjaWMRqu1dqNrT.AXPzee4pIiTmSX0bKg7tECZsHQ4mvT5YAQG6","role":0}
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Created record with ID: 12
+[2025-02-28 08:34:13] [DB] [info] Creating new record in products
+[2025-02-28 08:34:13] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:13] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Created record with ID: 11
+[2025-02-28 08:34:13] [DB] [info] Reading from users
+[2025-02-28 08:34:13] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:13] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:13] [DB] [info] Reading from products
+[2025-02-28 08:34:13] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Retrieved 9 records
+[2025-02-28 08:34:13] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:13] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:13] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"12"}
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Updated 1 records
+[2025-02-28 08:34:13] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:13] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:13] [DB] [info] With parameters: {"set_quantity":5,"where_id":"11"}
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Updated 1 records
+[2025-02-28 08:34:13] [DB] [info] Reading from users
+[2025-02-28 08:34:13] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Retrieved 8 records
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:13] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:13] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:13] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:13] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:13] [DB] [info] Attempting database connection
+[2025-02-28 08:34:13] [DB] [info] Database connection successful
+[2025-02-28 08:34:13] [DB] [info] Generating database tables
+[2025-02-28 08:34:13] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Users table created/verified
+[2025-02-28 08:34:13] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:13] [DB] [info] Query executed successfully
+[2025-02-28 08:34:13] [DB] [info] Products table created/verified
+[2025-02-28 08:34:14] [DB] [info] Creating new record in users
+[2025-02-28 08:34:14] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:14] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$OBabyYmV0EpuMxxYU5KeweDmr\/fdb8IiMaODOJJ8.duN1Ic1hD1H.","role":0}
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Created record with ID: 13
+[2025-02-28 08:34:14] [DB] [info] Creating new record in products
+[2025-02-28 08:34:14] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:14] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Created record with ID: 12
+[2025-02-28 08:34:14] [DB] [info] Reading from users
+[2025-02-28 08:34:14] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:14] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:14] [DB] [info] Reading from products
+[2025-02-28 08:34:14] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Retrieved 10 records
+[2025-02-28 08:34:14] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:14] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:14] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"13"}
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Updated 1 records
+[2025-02-28 08:34:14] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:14] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:14] [DB] [info] With parameters: {"set_quantity":5,"where_id":"12"}
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Updated 1 records
+[2025-02-28 08:34:14] [DB] [info] Reading from users
+[2025-02-28 08:34:14] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Retrieved 9 records
+[2025-02-28 08:34:14] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:14] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:14] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:14] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:14] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:14] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:14] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:14] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:14] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:14] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:14] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:14] [DB] [info] Attempting database connection
+[2025-02-28 08:34:14] [DB] [info] Database connection successful
+[2025-02-28 08:34:14] [DB] [info] Generating database tables
+[2025-02-28 08:34:14] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Users table created/verified
+[2025-02-28 08:34:14] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Products table created/verified
+[2025-02-28 08:34:14] [DB] [info] Creating new record in users
+[2025-02-28 08:34:14] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:14] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$JiAysWOMkcGkqX\/XqtpvaOgaR6rv9TuRGRJJ6QTpAE5T3gF\/kEQ.m","role":0}
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Created record with ID: 14
+[2025-02-28 08:34:14] [DB] [info] Creating new record in products
+[2025-02-28 08:34:14] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:14] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Created record with ID: 13
+[2025-02-28 08:34:14] [DB] [info] Reading from users
+[2025-02-28 08:34:14] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:14] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:14] [DB] [info] Reading from products
+[2025-02-28 08:34:14] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Retrieved 11 records
+[2025-02-28 08:34:14] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:14] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:14] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"14"}
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Updated 1 records
+[2025-02-28 08:34:14] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:14] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:14] [DB] [info] With parameters: {"set_quantity":5,"where_id":"13"}
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Updated 1 records
+[2025-02-28 08:34:14] [DB] [info] Reading from users
+[2025-02-28 08:34:14] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:14] [DB] [info] Query executed successfully
+[2025-02-28 08:34:14] [DB] [info] Retrieved 10 records
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:15] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:15] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:15] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:15] [DB] [info] Attempting database connection
+[2025-02-28 08:34:15] [DB] [info] Database connection successful
+[2025-02-28 08:34:15] [DB] [info] Generating database tables
+[2025-02-28 08:34:15] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Users table created/verified
+[2025-02-28 08:34:15] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Products table created/verified
+[2025-02-28 08:34:15] [DB] [info] Creating new record in users
+[2025-02-28 08:34:15] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:15] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$MiCp4\/J96VG6g4CtkyI96ObaXcKd\/9wJl57bFNZLf2KV\/.a2V2gEq","role":0}
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Created record with ID: 15
+[2025-02-28 08:34:15] [DB] [info] Creating new record in products
+[2025-02-28 08:34:15] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:15] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Created record with ID: 14
+[2025-02-28 08:34:15] [DB] [info] Reading from users
+[2025-02-28 08:34:15] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:15] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:15] [DB] [info] Reading from products
+[2025-02-28 08:34:15] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Retrieved 12 records
+[2025-02-28 08:34:15] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:15] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:15] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"15"}
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Updated 1 records
+[2025-02-28 08:34:15] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:15] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:15] [DB] [info] With parameters: {"set_quantity":5,"where_id":"14"}
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Updated 1 records
+[2025-02-28 08:34:15] [DB] [info] Reading from users
+[2025-02-28 08:34:15] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Retrieved 11 records
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:15] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:15] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:15] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:15] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:15] [DB] [info] Attempting database connection
+[2025-02-28 08:34:15] [DB] [info] Database connection successful
+[2025-02-28 08:34:15] [DB] [info] Generating database tables
+[2025-02-28 08:34:15] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Users table created/verified
+[2025-02-28 08:34:15] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:15] [DB] [info] Query executed successfully
+[2025-02-28 08:34:15] [DB] [info] Products table created/verified
+[2025-02-28 08:34:16] [DB] [info] Creating new record in users
+[2025-02-28 08:34:16] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:16] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$WnbziecDwHyYXZ4Y7gDTZOZUPGzz6J8SNgSZXaMDkZOVL58D0VMKy","role":0}
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Created record with ID: 16
+[2025-02-28 08:34:16] [DB] [info] Creating new record in products
+[2025-02-28 08:34:16] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:16] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Created record with ID: 15
+[2025-02-28 08:34:16] [DB] [info] Reading from users
+[2025-02-28 08:34:16] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:16] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:16] [DB] [info] Reading from products
+[2025-02-28 08:34:16] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Retrieved 13 records
+[2025-02-28 08:34:16] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:16] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:16] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"16"}
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Updated 1 records
+[2025-02-28 08:34:16] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:16] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:16] [DB] [info] With parameters: {"set_quantity":5,"where_id":"15"}
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Updated 1 records
+[2025-02-28 08:34:16] [DB] [info] Reading from users
+[2025-02-28 08:34:16] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Retrieved 12 records
+[2025-02-28 08:34:16] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:16] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:16] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:16] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:16] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:16] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:16] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:16] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:16] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:16] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:16] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:16] [DB] [info] Attempting database connection
+[2025-02-28 08:34:16] [DB] [info] Database connection successful
+[2025-02-28 08:34:16] [DB] [info] Generating database tables
+[2025-02-28 08:34:16] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Users table created/verified
+[2025-02-28 08:34:16] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Products table created/verified
+[2025-02-28 08:34:16] [DB] [info] Creating new record in users
+[2025-02-28 08:34:16] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:16] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$aEokit3uda3EMPFG\/pqVFOnWA5hokqtyyUmVyI0LKQVaazm.4ssz.","role":0}
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Created record with ID: 17
+[2025-02-28 08:34:16] [DB] [info] Creating new record in products
+[2025-02-28 08:34:16] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:16] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Created record with ID: 16
+[2025-02-28 08:34:16] [DB] [info] Reading from users
+[2025-02-28 08:34:16] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:16] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:16] [DB] [info] Reading from products
+[2025-02-28 08:34:16] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Retrieved 14 records
+[2025-02-28 08:34:16] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:16] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:16] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"17"}
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Updated 1 records
+[2025-02-28 08:34:16] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:16] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:16] [DB] [info] With parameters: {"set_quantity":5,"where_id":"16"}
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Updated 1 records
+[2025-02-28 08:34:16] [DB] [info] Reading from users
+[2025-02-28 08:34:16] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:16] [DB] [info] Query executed successfully
+[2025-02-28 08:34:16] [DB] [info] Retrieved 13 records
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:17] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:17] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:17] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:17] [DB] [info] Attempting database connection
+[2025-02-28 08:34:17] [DB] [info] Database connection successful
+[2025-02-28 08:34:17] [DB] [info] Generating database tables
+[2025-02-28 08:34:17] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Users table created/verified
+[2025-02-28 08:34:17] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Products table created/verified
+[2025-02-28 08:34:17] [DB] [info] Creating new record in users
+[2025-02-28 08:34:17] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:17] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$MrELxJ7SxMAtqCwHLvF1huMzAkfQvUfQ\/QMZPjq25IUui5A4HSrzu","role":0}
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Created record with ID: 18
+[2025-02-28 08:34:17] [DB] [info] Creating new record in products
+[2025-02-28 08:34:17] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:17] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Created record with ID: 17
+[2025-02-28 08:34:17] [DB] [info] Reading from users
+[2025-02-28 08:34:17] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:17] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:17] [DB] [info] Reading from products
+[2025-02-28 08:34:17] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Retrieved 15 records
+[2025-02-28 08:34:17] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:17] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:17] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"18"}
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Updated 1 records
+[2025-02-28 08:34:17] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:17] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:17] [DB] [info] With parameters: {"set_quantity":5,"where_id":"17"}
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Updated 1 records
+[2025-02-28 08:34:17] [DB] [info] Reading from users
+[2025-02-28 08:34:17] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Retrieved 14 records
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:34:17] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:34:17] [ROUTER] [info] Handling request: GET /backend/migrate
+[2025-02-28 08:34:17] [ROUTER] [info] Path matched: /backend/migrate matches pattern \/backend\/migrate
+[2025-02-28 08:34:17] [ROUTER] [info] Route matched: GET /backend/migrate
+[2025-02-28 08:34:17] [DB] [info] Attempting database connection
+[2025-02-28 08:34:17] [DB] [info] Database connection successful
+[2025-02-28 08:34:17] [DB] [info] Generating database tables
+[2025-02-28 08:34:17] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `users` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `password` varchar(255) NOT NULL,
+            `role` boolean NOT NULL DEFAULT 0
+        )
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Users table created/verified
+[2025-02-28 08:34:17] [DB] [info] Executing query: CREATE TABLE IF NOT EXISTS `products` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `price` float NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `image` varchar(255) NOT NULL
+        )
+[2025-02-28 08:34:17] [DB] [info] Query executed successfully
+[2025-02-28 08:34:17] [DB] [info] Products table created/verified
+[2025-02-28 08:34:18] [DB] [info] Creating new record in users
+[2025-02-28 08:34:18] [DB] [info] Executing query: INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)
+[2025-02-28 08:34:18] [DB] [info] With parameters: {"name":"admin@admin.admin","email":"admin@admin.admin","password":"$2y$12$0LfrIInCKj4bcSqNMHzNveWuhlJ4ZGSYo\/SczG21Iqp8oiRfzts3e","role":0}
+[2025-02-28 08:34:18] [DB] [info] Query executed successfully
+[2025-02-28 08:34:18] [DB] [info] Created record with ID: 19
+[2025-02-28 08:34:18] [DB] [info] Creating new record in products
+[2025-02-28 08:34:18] [DB] [info] Executing query: INSERT INTO products (name, price, quantity, image) VALUES (:name, :price, :quantity, :image)
+[2025-02-28 08:34:18] [DB] [info] With parameters: {"name":"Laptop","price":999.99,"quantity":10,"image":"laptop.jpg"}
+[2025-02-28 08:34:18] [DB] [info] Query executed successfully
+[2025-02-28 08:34:18] [DB] [info] Created record with ID: 18
+[2025-02-28 08:34:18] [DB] [info] Reading from users
+[2025-02-28 08:34:18] [DB] [info] Executing query: SELECT * FROM users WHERE email = :email
+[2025-02-28 08:34:18] [DB] [info] With parameters: {"email":"john@example.com"}
+[2025-02-28 08:34:18] [DB] [info] Query executed successfully
+[2025-02-28 08:34:18] [DB] [info] Retrieved 0 records
+[2025-02-28 08:34:18] [DB] [info] Reading from products
+[2025-02-28 08:34:18] [DB] [info] Executing query: SELECT * FROM products
+[2025-02-28 08:34:18] [DB] [info] Query executed successfully
+[2025-02-28 08:34:18] [DB] [info] Retrieved 16 records
+[2025-02-28 08:34:18] [DB] [info] Updating record(s) in users
+[2025-02-28 08:34:18] [DB] [info] Executing query: UPDATE users SET name = :set_name WHERE id = :where_id
+[2025-02-28 08:34:18] [DB] [info] With parameters: {"set_name":"John Smith","where_id":"19"}
+[2025-02-28 08:34:18] [DB] [info] Query executed successfully
+[2025-02-28 08:34:18] [DB] [info] Updated 1 records
+[2025-02-28 08:34:18] [DB] [info] Updating record(s) in products
+[2025-02-28 08:34:18] [DB] [info] Executing query: UPDATE products SET quantity = :set_quantity WHERE id = :where_id
+[2025-02-28 08:34:18] [DB] [info] With parameters: {"set_quantity":5,"where_id":"18"}
+[2025-02-28 08:34:18] [DB] [info] Query executed successfully
+[2025-02-28 08:34:18] [DB] [info] Updated 1 records
+[2025-02-28 08:34:18] [DB] [info] Reading from users
+[2025-02-28 08:34:18] [DB] [info] Executing query: SELECT name, email FROM users
+[2025-02-28 08:34:18] [DB] [info] Query executed successfully
+[2025-02-28 08:34:18] [DB] [info] Retrieved 15 records
+[2025-02-28 08:35:18] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:35:18] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:35:18] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:35:18] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:35:18] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:35:18] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:35:18] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:35:18] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:35:18] [ROUTER] [info] Handling request: GET /examples/product
+[2025-02-28 08:35:18] [ROUTER] [debug] Path not matched: /examples/product does not match pattern \/backend\/migrate
+[2025-02-28 08:35:18] [ROUTER] [debug] Path not matched: /examples/product does not match pattern \/examples\/products
+[2025-02-28 08:35:18] [ROUTER] [debug] Path not matched: /examples/product does not match pattern \/
+[2025-02-28 08:35:18] [ROUTER] [debug] Path not matched: /examples/product does not match pattern \/components
+[2025-02-28 08:35:18] [ROUTER] [debug] Path not matched: /examples/product does not match pattern \/about
+[2025-02-28 08:35:18] [ROUTER] [debug] Path not matched: /examples/product does not match pattern \/authentification\/login
+[2025-02-28 08:35:18] [ROUTER] [debug] Path not matched: /examples/product does not match pattern \/authentification\/logout
+[2025-02-28 08:35:18] [ROUTER] [warning] No matching route found for: GET /examples/product
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:35:29] [ROUTER] [info] Handling request: GET /examples/products
+[2025-02-28 08:35:29] [ROUTER] [debug] Path not matched: /examples/products does not match pattern \/backend\/migrate
+[2025-02-28 08:35:29] [ROUTER] [info] Path matched: /examples/products matches pattern \/examples\/products
+[2025-02-28 08:35:29] [ROUTER] [info] Route matched: GET /examples/products
+[2025-02-28 08:35:29] [DB] [info] Attempting database connection
+[2025-02-28 08:35:29] [DB] [info] Database connection successful
+[2025-02-28 08:35:29] [VIEW] [info] Rendering view: examples/products
+[2025-02-28 08:35:29] [VIEW] [info] View data: {"products":[{"id":3,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":4,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":5,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":6,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":7,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":8,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":9,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":10,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":11,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":12,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":13,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":14,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":15,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":16,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":17,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":18,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"}],"title":"Product List"}
+[2025-02-28 08:35:29] [VIEW] [info] Loading view file: views/examples/products.php
+[2025-02-28 08:35:29] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:35:29] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:35:29] [ROUTER] [info] Handling request: GET /public/images/laptop.jpg
+[2025-02-28 08:35:29] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/backend\/migrate
+[2025-02-28 08:35:29] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/examples\/products
+[2025-02-28 08:35:29] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/
+[2025-02-28 08:35:29] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/components
+[2025-02-28 08:35:29] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/about
+[2025-02-28 08:35:29] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/authentification\/login
+[2025-02-28 08:35:29] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/authentification\/logout
+[2025-02-28 08:35:29] [ROUTER] [warning] No matching route found for: GET /public/images/laptop.jpg
+[2025-02-28 08:35:37] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:35:37] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:35:37] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:35:37] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:35:37] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:35:37] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:35:37] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:35:37] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:35:37] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:35:37] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:35:37] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:35:37] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:35:37] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:35:37] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:35:37] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:35:37] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:40:00] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:40:00] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:40:00] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:40:00] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:40:00] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:40:00] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:40:00] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:40:00] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:40:00] [ROUTER] [info] Handling request: GET /
+[2025-02-28 08:40:00] [ROUTER] [debug] Path not matched: / does not match pattern \/backend\/migrate
+[2025-02-28 08:40:00] [ROUTER] [debug] Path not matched: / does not match pattern \/examples\/products
+[2025-02-28 08:40:00] [ROUTER] [info] Path matched: / matches pattern \/
+[2025-02-28 08:40:00] [ROUTER] [info] Route matched: GET /
+[2025-02-28 08:40:00] [VIEW] [info] Rendering view: home/index
+[2025-02-28 08:40:00] [VIEW] [info] Loading view file: views/home/index.php
+[2025-02-28 08:40:00] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:40:05] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:40:05] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:40:05] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:40:05] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:40:05] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:40:05] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:40:05] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:40:05] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:40:05] [ROUTER] [info] Handling request: GET /examples/products
+[2025-02-28 08:40:05] [ROUTER] [debug] Path not matched: /examples/products does not match pattern \/backend\/migrate
+[2025-02-28 08:40:05] [ROUTER] [info] Path matched: /examples/products matches pattern \/examples\/products
+[2025-02-28 08:40:05] [ROUTER] [info] Route matched: GET /examples/products
+[2025-02-28 08:40:07] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:40:07] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:40:07] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:40:07] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:40:07] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:40:07] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:40:07] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:40:07] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:40:07] [ROUTER] [info] Handling request: GET /examples/products
+[2025-02-28 08:40:07] [ROUTER] [debug] Path not matched: /examples/products does not match pattern \/backend\/migrate
+[2025-02-28 08:40:07] [ROUTER] [info] Path matched: /examples/products matches pattern \/examples\/products
+[2025-02-28 08:40:07] [ROUTER] [info] Route matched: GET /examples/products
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:41:04] [ROUTER] [info] Handling request: GET /examples/products
+[2025-02-28 08:41:04] [ROUTER] [debug] Path not matched: /examples/products does not match pattern \/backend\/migrate
+[2025-02-28 08:41:04] [ROUTER] [info] Path matched: /examples/products matches pattern \/examples\/products
+[2025-02-28 08:41:04] [ROUTER] [info] Route matched: GET /examples/products
+[2025-02-28 08:41:04] [DB] [info] Attempting database connection
+[2025-02-28 08:41:04] [DB] [info] Database connection successful
+[2025-02-28 08:41:04] [VIEW] [info] Rendering view: examples/products
+[2025-02-28 08:41:04] [VIEW] [info] View data: {"products":[{"id":3,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":4,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":5,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":6,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":7,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":8,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":9,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":10,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":11,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"},{"id":12,"name":"Laptop","price":999.99,"quantity":5,"image":"laptop.jpg"}],"title":"Product List","sort_column":"name","sort_order":"ASC"}
+[2025-02-28 08:41:04] [VIEW] [info] Loading view file: views/examples/products.php
+[2025-02-28 08:41:04] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /examples/products
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /components
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /about
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /authentification/login
+[2025-02-28 08:41:04] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-02-28 08:41:04] [ROUTER] [info] Handling request: GET /public/images/laptop.jpg
+[2025-02-28 08:41:04] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/backend\/migrate
+[2025-02-28 08:41:04] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/examples\/products
+[2025-02-28 08:41:04] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/
+[2025-02-28 08:41:04] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/components
+[2025-02-28 08:41:04] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/about
+[2025-02-28 08:41:04] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/authentification\/login
+[2025-02-28 08:41:04] [ROUTER] [debug] Path not matched: /public/images/laptop.jpg does not match pattern \/authentification\/logout
+[2025-02-28 08:41:04] [ROUTER] [warning] No matching route found for: GET /public/images/laptop.jpg

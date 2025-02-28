@@ -1,7 +1,4 @@
 <?php
-require_once '../backend/config/config.php';
-require_once '../backend/core/Database.php';
-
 // Initialize Database connection
 $db = new Database();
 $db->connect();
@@ -12,9 +9,9 @@ $db->generateTables();
 // Example 1: Creating a new user
 echo "\n=== Creating a new user ===\n";
 $userData = [
-    'name' => 'John Doe',
-    'email' => 'john@example.com',
-    'password' => password_hash('secret123', PASSWORD_DEFAULT),
+    'name' => 'admin@admin.admin',
+    'email' => 'admin@admin.admin',
+    'password' => password_hash('admin@admin.admin', PASSWORD_DEFAULT),
     'role' => 0
 ];
 $userId = $db->create('users', $userData);
@@ -63,13 +60,3 @@ echo "\n=== Reading specific fields ===\n";
 $users = $db->read('users', [], 'name, email');
 echo "Users (name and email only):\n";
 print_r($users);
-
-// Example 8: Deleting records
-echo "\n=== Deleting records ===\n";
-$deleteConditions = ['id' => $productId];
-$db->delete('products', $deleteConditions);
-echo "Deleted product {$productId}\n";
-
-// Clean up example data
-$db->delete('users', ['id' => $userId]);
-echo "Cleaned up example data\n";
