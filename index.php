@@ -20,11 +20,11 @@ $router->addRoute('GET', '/about', function() {
     View::render('about/index');
 });
 
-$router->addRoute('GET', '/authentification', function() {
+$router->addRoute('GET', '/authentification/login', function() {
     View::render('authentification/login');
 });
 
-$router->addRoute('GET', '/authentification', function() {
+$router->addRoute('GET', '/authentification/logout', function() {
     View::render('authentification/logout');
 });
 
