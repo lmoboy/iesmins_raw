@@ -20,5 +20,13 @@ $router->addRoute('GET', '/about', function() {
     View::render('about/index');
 });
 
+$router->addRoute('GET', '/authentification', function() {
+    View::render('authentification/login');
+});
+
+$router->addRoute('GET', '/authentification', function() {
+    View::render('authentification/logout');
+});
+
 // Handle the request
 $router->handleRequest();
