@@ -14,10 +14,6 @@ class App {
       this.components.set(element.id, searchBar);
       searchBar.render();
 
-    //   searchBar.on("stateChange", ({ newState }) => {
-    //     console.log(`searchbar: ${searchBar.element}`);
-    //     console.log(`Search query for ${element.id}:`, newState.query);
-    //   });
     });
 
     // Initialize dropdown components
@@ -31,9 +27,6 @@ class App {
       this.components.set(element.id, dropdown);
 
       dropdown.render();
-    //   dropdown.on("itemSelected", (selectedItem) => {
-    //     console.log(`Selected item for ${element.id}:`, selectedItem);
-    //   });
     });
   }
 
