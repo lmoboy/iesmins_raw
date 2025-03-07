@@ -21,10 +21,54 @@ $router->addRoute('GET', '/backend/migrate', function() {
     exit();
 });
 
-// Example route demonstrating core backend usage
-$router->addRoute('GET', '/examples/products', function() {
-    require_once 'examples/route_example.php';
-    handleUserProducts();
+
+// Admin routes
+$router->addRoute('GET', '/admin/products', function() {
+    if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
+        header('Location: /authentification/login');
+        exit();
+    }
+    $database = new Database();
+    $db = $database->connect();
+    $stmt = $db->query("SELECT * FROM products ORDER BY id DESC");
+    $products = $stmt->fetchAll();
+    View::render('admin/products', ['products' => $products]);
+});
+
+$router->addRoute('POST', '/admin/products/add', function() {
+    if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
+        header('Location: /authentification/login');
+        exit();
+    }
+    $database = new Database();
+    $db = $database->connect();
+    
+    $name = $_POST['name'];
+    $description = $_POST['description'];
+    $price = $_POST['price'];
+    $quantity = $_POST['quantity'];
+    
+    $stmt = $db->prepare("INSERT INTO products (name, description, price, quantity) VALUES (?, ?, ?, ?)");
+    $stmt->execute([$name, $description, $price, $quantity]);
+    
+    header('Location: /admin/products');
+    exit();
+});
+
+$router->addRoute('POST', '/admin/products/delete', function() {
+    if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
+        header('Location: /authentification/login');
+        exit();
+    }
+    $database = new Database();
+    $db = $database->connect();
+    
+    $product_id = $_POST['product_id'];
+    $stmt = $db->prepare("DELETE FROM products WHERE id = ?");
+    $stmt->execute([$product_id]);
+    
+    header('Location: /admin/products');
+    exit();
 });
 
 // Frontend

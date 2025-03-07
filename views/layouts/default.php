@@ -6,6 +6,13 @@
     <title><?= APP_NAME ?></title>
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
+<?php
+            if(!isset($_SESSION["user"])){
+                require_once 'views/authentification/login.php';
+                return;
+            }else{
+                var_dump($_SESSION);
+            ?>
 <body>
     <header>
         <nav>
@@ -21,16 +28,7 @@
                     </form>
                 </li>
                 
-                <!-- <?php
-                echo '<pre>';
-                echo 'Session ID: ' . session_id() . "\n";
-                echo 'Session Status: ' . session_status() . "\n";
-                echo 'Session Cookie Parameters: ';
-                var_dump(session_get_cookie_params());
-                echo 'Session Data: ';
-                var_dump($_SESSION);
-                echo '</pre>';
-                ?> -->
+
 
                 <?php if (isset($_SESSION['user'])): ?>
                     <li style="color: white;">Welcome, <?= htmlspecialchars($_SESSION['user']['name']) ?></li>
@@ -53,4 +51,7 @@
     <script src="/public/js/helpers.js"></script>
     <script src="/public/js/app.js"></script>
 </body>
+<?php
+            }
+            ?>
 </html>
