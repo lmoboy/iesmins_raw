@@ -25,9 +25,12 @@ class Router {
         $this->debug_log("Handling request: {$method} {$url}");
 
         foreach ($this->routes as $route) {
-            if ($route['method'] === $method && $this->matchPath($route['path'], $url)) {
-                $this->debug_log("Route matched: {$route['method']} {$route['path']}");
-                return call_user_func($route['callback']);
+            if ($route['method'] === $method) {
+                $params = $this->matchPath($route['path'], $url);
+                if ($params !== false) {
+                    $this->debug_log("Route matched: {$route['method']} {$route['path']}");
+                    return call_user_func($route['callback'], $params);
+                }
             }
         }
 
@@ -37,16 +40,23 @@ class Router {
     }
 
     private function matchPath($routePath, $requestPath) {
-        $routePath = preg_replace('/\{([^}]+)\}/', '([^/]+)', $routePath);
-        $routePath = str_replace('/', '\/', $routePath);
-        $matched = preg_match('/^' . $routePath . '$/', $requestPath);
-        
-        if ($matched) {
-            $this->debug_log("Path matched: {$requestPath} matches pattern {$routePath}");
-        } else {
-            $this->debug_log("Path not matched: {$requestPath} does not match pattern {$routePath}", 'debug');
+        $routeParts = explode('/', trim($routePath, '/'));
+        $requestParts = explode('/', trim($requestPath, '/'));
+
+        if (count($routeParts) !== count($requestParts)) {
+            return false;
         }
-        
-        return $matched;
+
+        $params = [];
+        for ($i = 0; $i < count($routeParts); $i++) {
+            if (strpos($routeParts[$i], ':') === 0) {
+                $paramName = substr($routeParts[$i], 1);
+                $params[$paramName] = $requestParts[$i];
+            } elseif ($routeParts[$i] !== $requestParts[$i]) {
+                return false;
+            }
+        }
+
+        return !empty($params) ? $params : ($routePath === $requestPath);
     }
 }

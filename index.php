@@ -29,15 +29,16 @@ $router->addRoute('GET', '/examples/products', function() {
 
 // Frontend
 $router->addRoute('GET', '/', function() {
-    View::render('home/index');
+    View::render('products/index');
 });
 
-$router->addRoute('GET', '/components', function() {
-    View::render('components/index');
+$router->addRoute('GET', '/products', function() {
+    View::render('products/index');
 });
 
-$router->addRoute('GET', '/about', function() {
-    View::render('about/index');
+$router->addRoute('GET', '/products/:id', function($params) {
+    $_GET['id'] = $params['id'];
+    View::render('products/detail');
 });
 
 $router->addRoute('GET', '/authentification/login', function() {

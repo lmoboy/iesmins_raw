@@ -63,11 +63,24 @@ class Database
             `name` varchar(255) NOT NULL,
             `price` float NOT NULL,
             `quantity` int(11) NOT NULL,
-            `image` varchar(255) NOT NULL
+            `image` varchar(255) NOT NULL,
+            `category` varchar(100) NOT NULL
         )';
 
         $this->query($sql);
         $this->debug_log("Products table created/verified");
+
+        $sql = 'CREATE TABLE IF NOT EXISTS `orders` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `product_id` int(11) NOT NULL,
+            `quantity` int(11) NOT NULL,
+            `total_price` float NOT NULL,
+            `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (`product_id`) REFERENCES `products`(`id`)
+        )';
+
+        $this->query($sql);
+        $this->debug_log("Orders table created/verified");
     }
 
     public function query($sql, $params = [])
@@ -79,7 +92,21 @@ class Database
             }
             
             $stmt = $this->conn->prepare($sql);
-            $stmt->execute($params);
+            
+            // Bind parameters with appropriate types
+            foreach ($params as $key => $value) {
+                $type = PDO::PARAM_STR;
+                if (is_int($value)) {
+                    $type = PDO::PARAM_INT;
+                } elseif (is_bool($value)) {
+                    $type = PDO::PARAM_BOOL;
+                } elseif (is_null($value)) {
+                    $type = PDO::PARAM_NULL;
+                }
+                $stmt->bindValue($key, $value, $type);
+            }
+            
+            $stmt->execute();
             $this->debug_log("Query executed successfully");
             return $stmt;
         } catch (PDOException $e) {

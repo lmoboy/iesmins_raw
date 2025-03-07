@@ -1,5 +1,7 @@
 <?php
 // Initialize Database connection
+require_once __DIR__."/ProductSeeder.php"; 
+
 $db = new Database();
 $db->connect();
 
@@ -12,10 +14,15 @@ $userData = [
     'name' => 'admin@admin.admin',
     'email' => 'admin@admin.admin',
     'password' => password_hash('admin@admin.admin', PASSWORD_DEFAULT),
-    'role' => 0
+    'role' => 1
 ];
 $userId = $db->create('users', $userData);
 echo "Created user with ID: {$userId}\n";
+
+// Seed products using ProductSeeder
+echo "\n=== Seeding products ===\n";
+$seeder = new ProductSeeder();
+$seeder->seed();
 
 // Example 2: Creating a product
 echo "\n=== Creating a new product ===\n";
@@ -23,7 +30,8 @@ $productData = [
     'name' => 'Laptop',
     'price' => 999.99,
     'quantity' => 10,
-    'image' => 'laptop.jpg'
+    'image' => 'laptop.jpg',
+    'category' => 'Electronics'
 ];
 $productId = $db->create('products', $productData);
 echo "Created product with ID: {$productId}\n";

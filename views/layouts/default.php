@@ -11,9 +11,15 @@
         <nav>
             <h1><?= APP_NAME ?></h1>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/components">Component showcase</a></li>
+                <li>
+                    <form action="/products" method="GET" class="search-form" style="display: inline-block;">
+                        <input type="search" name="search" placeholder="Search products..." 
+                               class="search-input" style="padding: 5px; border-radius: 4px; border: 1px solid #ccc;">
+                        <button type="submit" style="padding: 5px 10px; border-radius: 4px; background: #4a5568; color: white; border: none;">
+                            Search
+                        </button>
+                    </form>
+                </li>
                 
                 <!-- <?php
                 echo '<pre>';
