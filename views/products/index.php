@@ -62,7 +62,7 @@ $categories = $product->getCategories();
     <div class="products-grid">
         <?php foreach ($products as $product): ?>
             <div class="product-card">
-                <img src="/public/images/<?= htmlspecialchars($product['image']) ?>" 
+                <img src="/public/uploads/<?= htmlspecialchars($product['image']) ?>" 
                      alt="<?= htmlspecialchars($product['name']) ?>" 
                      class="product-image">
                 <div class="product-info">

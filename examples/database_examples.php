@@ -31,7 +31,7 @@ $productData = [
     'description' => 'High-performance laptop with latest specifications',
     'price' => 999.99,
     'quantity' => 10,
-    'image' => 'laptop.jpg',
+    'image' => 'laptop.jpeg',
     'category' => 'Electronics'
 ];
 $productId = $db->create('products', $productData);

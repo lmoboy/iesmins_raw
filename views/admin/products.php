@@ -70,7 +70,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
                             <td>$<?php echo htmlspecialchars(number_format($product['price'], 2)); ?></td>
                             <td><?php echo htmlspecialchars($product['quantity']); ?></td>
                             <td>
-                                <form action="/admin/products/delete" method="POST" style="display: inline;">
+                                <form action="/admin/products/delete" method="POST" class="inline-form">
                                     <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
                                     <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this product?')">
                                         Delete

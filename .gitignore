@@ -1,2 +1,3 @@
-./logs 
-
+logs 
+public/uploads
+logs/debug.log

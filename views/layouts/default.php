@@ -11,18 +11,33 @@
                 require_once 'views/authentification/login.php';
                 return;
             }else{
-                var_dump($_SESSION);
             ?>
 <body>
+    <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <div class="sidebar">
+        <div class="sidebar-profile">
+            <div class="user-name"><?= htmlspecialchars($_SESSION['user']['name']) ?></div>
+            <div class="user-role"><?= $_SESSION['user']['role'] === 1 ? 'Administrator' : 'User' ?></div>
+            <a href="/authentification/logout" class="btn btn-danger">Logout</a>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="/products">Products</a></li>
+            <?php if ($_SESSION['user']['role'] === 1): ?>
+            <li><a href="/admin/products">Product Management</a></li>
+            <?php endif; ?>
+        </ul>
+    </div>
+
     <header>
         <nav>
             <h1><?= APP_NAME ?></h1>
             <ul>
                 <li>
-                    <form action="/products" method="GET" class="search-form" style="display: inline-block;">
+                    <form action="/products" method="GET" class="search-form">
                         <input type="search" name="search" placeholder="Search products..." 
-                               class="search-input" style="padding: 5px; border-radius: 4px; border: 1px solid #ccc;">
-                        <button type="submit" style="padding: 5px 10px; border-radius: 4px; background: #4a5568; color: white; border: none;">
+                               class="search-input">
+                        <button type="submit">
                             Search
                         </button>
                     </form>
@@ -33,13 +48,6 @@
                         Toggle Theme
                     </button>
                 </li>
-
-                <?php if (isset($_SESSION['user'])): ?>
-                    <li style="color: white;">Welcome, <?= htmlspecialchars($_SESSION['user']['name']) ?></li>
-                    <li><a href="/authentification/logout">Logout</a></li>
-                <?php else: ?>
-                    <li><a href="/authentification/login">Login</a></li>
-                <?php endif; ?>
             </ul>
         </nav>
     </header>

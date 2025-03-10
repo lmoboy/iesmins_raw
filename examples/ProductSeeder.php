@@ -10,7 +10,7 @@ class ProductSeeder {
             'description' => 'Comfortable and stylish white sneakers for everyday wear',
             'price' => 79.99,
             'quantity' => 25,
-            'image' => 'sneakers.jpg',
+            'image' => 'classical-white-sneakers.jpg',
             'category' => 'Footwear'
         ],
         [
@@ -18,7 +18,7 @@ class ProductSeeder {
             'description' => 'Premium leather messenger bag perfect for work or travel',
             'price' => 129.99,
             'quantity' => 15,
-            'image' => 'bag.jpg',
+            'image' => 'leather-messenger-bag.jpg',
             'category' => 'Accessories'
         ],
         [
@@ -26,7 +26,7 @@ class ProductSeeder {
             'description' => 'High-quality wireless headphones with noise cancellation',
             'price' => 199.99,
             'quantity' => 30,
-            'image' => 'headphones.jpg',
+            'image' => 'wireless-headphones.jpg',
             'category' => 'Electronics'
         ],
         [
@@ -34,7 +34,7 @@ class ProductSeeder {
             'description' => 'Feature-rich smartwatch with fitness tracking capabilities',
             'price' => 249.99,
             'quantity' => 20,
-            'image' => 'watch.jpg',
+            'image' => 'smart-watch.jpg',
             'category' => 'Electronics'
         ],
         [
@@ -42,7 +42,7 @@ class ProductSeeder {
             'description' => 'Durable backpack with padded laptop compartment',
             'price' => 89.99,
             'quantity' => 40,
-            'image' => 'backpack.jpg',
+            'image' => 'laptop-backpack.jpg',
             'category' => 'Accessories'
         ],
         [
@@ -50,7 +50,7 @@ class ProductSeeder {
             'description' => 'High-capacity power bank for charging multiple devices',
             'price' => 49.99,
             'quantity' => 50,
-            'image' => 'powerbank.jpg',
+            'image' => 'portable-power-bank.jpg',
             'category' => 'Electronics'
         ],
         [
@@ -58,7 +58,7 @@ class ProductSeeder {
             'description' => 'Portable Bluetooth speaker with rich sound quality',
             'price' => 159.99,
             'quantity' => 35,
-            'image' => 'speaker.jpg',
+            'image' => 'bluetooth-speaker.jpeg',
             'category' => 'Electronics'
         ],
         [
@@ -66,7 +66,7 @@ class ProductSeeder {
             'description' => 'High-precision gaming mouse with customizable buttons',
             'price' => 69.99,
             'quantity' => 45,
-            'image' => 'mouse.jpg',
+            'image' => 'gaming-mouse.jpg',
             'category' => 'Electronics'
         ]
     ];
