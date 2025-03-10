@@ -7,6 +7,7 @@ class ProductSeeder {
     private $products = [
         [
             'name' => 'Classic White Sneakers',
+            'description' => 'Comfortable and stylish white sneakers for everyday wear',
             'price' => 79.99,
             'quantity' => 25,
             'image' => 'sneakers.jpg',
@@ -14,6 +15,7 @@ class ProductSeeder {
         ],
         [
             'name' => 'Leather Messenger Bag',
+            'description' => 'Premium leather messenger bag perfect for work or travel',
             'price' => 129.99,
             'quantity' => 15,
             'image' => 'bag.jpg',
@@ -21,6 +23,7 @@ class ProductSeeder {
         ],
         [
             'name' => 'Wireless Headphones',
+            'description' => 'High-quality wireless headphones with noise cancellation',
             'price' => 199.99,
             'quantity' => 30,
             'image' => 'headphones.jpg',
@@ -28,6 +31,7 @@ class ProductSeeder {
         ],
         [
             'name' => 'Smart Watch',
+            'description' => 'Feature-rich smartwatch with fitness tracking capabilities',
             'price' => 249.99,
             'quantity' => 20,
             'image' => 'watch.jpg',
@@ -35,6 +39,7 @@ class ProductSeeder {
         ],
         [
             'name' => 'Laptop Backpack',
+            'description' => 'Durable backpack with padded laptop compartment',
             'price' => 89.99,
             'quantity' => 40,
             'image' => 'backpack.jpg',
@@ -42,6 +47,7 @@ class ProductSeeder {
         ],
         [
             'name' => 'Portable Power Bank',
+            'description' => 'High-capacity power bank for charging multiple devices',
             'price' => 49.99,
             'quantity' => 50,
             'image' => 'powerbank.jpg',
@@ -49,6 +55,7 @@ class ProductSeeder {
         ],
         [
             'name' => 'Bluetooth Speaker',
+            'description' => 'Portable Bluetooth speaker with rich sound quality',
             'price' => 159.99,
             'quantity' => 35,
             'image' => 'speaker.jpg',
@@ -56,6 +63,7 @@ class ProductSeeder {
         ],
         [
             'name' => 'Gaming Mouse',
+            'description' => 'High-precision gaming mouse with customizable buttons',
             'price' => 69.99,
             'quantity' => 45,
             'image' => 'mouse.jpg',
@@ -76,11 +84,12 @@ class ProductSeeder {
         $this->db->query("DELETE FROM products");
 
         // Insert new products
-        $sql = "INSERT INTO products (name, price, quantity, image, category) VALUES (:name, :price, :quantity, :image, :category)";
+        $sql = "INSERT INTO products (name, description, price, quantity, image, category) VALUES (:name, :description, :price, :quantity, :image, :category)";
         
         foreach ($this->products as $product) {
             $this->db->query($sql, [
                 'name' => $product['name'],
+                'description' => $product['description'],
                 'price' => $product['price'],
                 'quantity' => $product['quantity'],
                 'image' => $product['image'],

@@ -28,6 +28,7 @@ $seeder->seed();
 echo "\n=== Creating a new product ===\n";
 $productData = [
     'name' => 'Laptop',
+    'description' => 'High-performance laptop with latest specifications',
     'price' => 999.99,
     'quantity' => 10,
     'image' => 'laptop.jpg',
