@@ -28,7 +28,11 @@
                     </form>
                 </li>
                 
-
+                <li>
+                    <button id="theme-toggle" class="btn" style="background: var(--primary-color);">
+                        Toggle Theme
+                    </button>
+                </li>
 
                 <?php if (isset($_SESSION['user'])): ?>
                     <li style="color: white;">Welcome, <?= htmlspecialchars($_SESSION['user']['name']) ?></li>
@@ -49,6 +53,7 @@
     </footer>
 
     <script src="/public/js/helpers.js"></script>
+    <script src="/public/js/theme.js"></script>
     <script src="/public/js/app.js"></script>
 </body>
 <?php
