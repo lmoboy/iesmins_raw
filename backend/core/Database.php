@@ -47,6 +47,15 @@ class Database
     {
         $this->debug_log("Generating database tables");
         
+        $sql = 'CREATE TABLE IF NOT EXISTS `categories` (
+            `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) NOT NULL,
+            `description` varchar(255)
+        )';
+
+        $this->query($sql);
+        $this->debug_log("Categories table created/verified");
+
         $sql = 'CREATE TABLE IF NOT EXISTS `users` (
             `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
             `name` varchar(255) NOT NULL,
@@ -61,11 +70,12 @@ class Database
         $sql = 'CREATE TABLE IF NOT EXISTS `products` (
             `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
             `name` varchar(255) NOT NULL,
-            `category` varchar(255) NOT NULL,
             `description` varchar(255) NOT NULL,
+            `category_id` int(11) NOT NULL,
             `price` float NOT NULL,
             `quantity` int(11) NOT NULL,
-            `image` varchar(255) NOT NULL
+            `image` varchar(255) NOT NULL,
+            FOREIGN KEY (`category_id`) REFERENCES `categories`(`id`)
         )';
 
         $this->query($sql);

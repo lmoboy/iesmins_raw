@@ -50,8 +50,8 @@ $categories = $product->getCategories();
         <h2>Categories</h2>
         <div class="category-tags">
             <?php foreach ($categories as $category): ?>
-                <a href="/products?category=<?= urlencode($category) ?>" class="category-tag">
-                    <?= htmlspecialchars($category) ?>
+                <a href="/products?category=<?= urlencode($category['id']) ?>" class="category-tag">
+                    <?= htmlspecialchars($category['name']) ?>
                 </a>
             <?php endforeach; ?>
         </div>
@@ -67,7 +67,7 @@ $categories = $product->getCategories();
                      class="product-image">
                 <div class="product-info">
                     <h3><?= htmlspecialchars($product['name']) ?></h3>
-                    <p class="product-category"><?= htmlspecialchars($product['category']) ?></p>
+                    <p class="product-category"><?= htmlspecialchars($product['category_name']) ?></p>
                     <p class="product-price">$<?= number_format($product['price'], 2) ?></p>
                     <p class="stock-info"><?= $product['quantity'] ?> in stock</p>
                     <a href="/products/<?= $product['id'] ?>" class="btn">View Details</a>

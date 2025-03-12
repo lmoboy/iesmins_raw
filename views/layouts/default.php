@@ -25,6 +25,7 @@
             <li><a href="/products">Products</a></li>
             <?php if ($_SESSION['user']['role'] === 1): ?>
             <li><a href="/admin/products">Product Management</a></li>
+            <li><a href="/admin/users">User Management</a></li>
             <?php endif; ?>
         </ul>
     </div>

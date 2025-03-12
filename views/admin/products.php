@@ -1,10 +1,17 @@
+<pre>
+
 <?php
+require_once "products.php"; 
 if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
     header('Location: /');
     exit();
 }
-?>
 
+$product = new Product();
+$categories = $product->getCategories();
+// var_dump($categories);
+?>
+</pre>
 <div class="container mt-4">
     <h2>Product Management</h2>
     
@@ -18,6 +25,16 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
                 <div class="form-group mb-3">
                     <label for="name">Product Name</label>
                     <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="category">Category</label>
+                    <select class="form-control" id="category" name="category_id" required>
+                        <option value="">Select Category</option>
+                        <?php foreach ($categories as $category): ?>
+                            <option value="<?= $category['id'] ?>"><?= htmlspecialchars($category['name']) ?></option>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
                 
                 <div class="form-group mb-3">
@@ -57,6 +74,8 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
+                            <th>Category</th>
+                            <th>Description</th>
                             <th>Price</th>
                             <th>Quantity</th>
                             <th>Actions</th>
@@ -67,6 +86,8 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
                         <tr>
                             <td><?php echo htmlspecialchars($product['id']); ?></td>
                             <td><?php echo htmlspecialchars($product['name']); ?></td>
+                            <td><?php echo htmlspecialchars($categories[$product['category_id']-1]['name'] ?? $product['category_id']); ?></td>
+                            <td><?php echo htmlspecialchars(substr($product['description'], 0, 50)) . '...'; ?></td>
                             <td>$<?php echo htmlspecialchars(number_format($product['price'], 2)); ?></td>
                             <td><?php echo htmlspecialchars($product['quantity']); ?></td>
                             <td>

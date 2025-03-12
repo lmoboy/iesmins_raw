@@ -1,3 +1,5 @@
+<pre>
+
 <?php
 class Product {
     private $db;
@@ -14,10 +16,14 @@ class Product {
         $params = ['limit' => $limit, 'offset' => $offset];
         
         if (!empty($search)) {
-            $sql = "SELECT * FROM products WHERE name LIKE :search LIMIT :limit OFFSET :offset";
+            $sql = "SELECT p.*, c.name as category_name FROM products p 
+                   LEFT JOIN categories c ON p.category_id = c.id 
+                   WHERE p.name LIKE :search LIMIT :limit OFFSET :offset";
             $params['search'] = "%{$search}%";
         } else {
-            $sql = "SELECT * FROM products LIMIT :limit OFFSET :offset";
+            $sql = "SELECT p.*, c.name as category_name FROM products p 
+                   LEFT JOIN categories c ON p.category_id = c.id 
+                   LIMIT :limit OFFSET :offset";
         }
         
         $stmt = $this->db->query($sql, $params);
@@ -25,7 +31,9 @@ class Product {
     }
 
     public function getProductById($id) {
-        $sql = "SELECT * FROM products WHERE id = :id";
+        $sql = "SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id 
+               WHERE p.id = :id";
         $stmt = $this->db->query($sql, ['id' => $id]);
         return $stmt->fetch();
     }
@@ -38,7 +46,9 @@ class Product {
     }
 
     public function getLowStockProducts() {
-        $sql = "SELECT * FROM products WHERE quantity <= :threshold ORDER BY quantity ASC";
+        $sql = "SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id 
+               WHERE p.quantity <= :threshold ORDER BY p.quantity ASC";
         $stmt = $this->db->query($sql, ['threshold' => self::LOW_STOCK_THRESHOLD]);
         return $stmt->fetchAll();
     }
@@ -53,15 +63,53 @@ class Product {
         return $stmt->fetchAll();
     }
 
-    public function getProductsByCategory($category) {
-        $sql = "SELECT * FROM products WHERE category = :category";
-        $stmt = $this->db->query($sql, ['category' => $category]);
+    public function getProductsByCategory($category_id) {
+        $sql = "SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id 
+               WHERE p.category_id = :category_id";
+        $stmt = $this->db->query($sql, ['category_id' => $category_id]);
         return $stmt->fetchAll();
     }
 
     public function getCategories() {
-        $sql = "SELECT DISTINCT category FROM products ORDER BY category";
+        $sql = "SELECT * FROM categories ORDER BY id";
         $stmt = $this->db->query($sql);
-        return $stmt->fetchAll(PDO::FETCH_COLUMN);
+        return $stmt->fetchAll();
+    }
+
+    public function addProduct($data, $image) {
+        try {
+            $sql = "INSERT INTO products (name, description, price, quantity, category_id, image) 
+                    VALUES (:name, :description, :price, :quantity, :category_id, :image)";
+            
+            $params = [
+                'name' => $data['name'],
+                'description' => $data['description'],
+                'price' => $data['price'],
+                'quantity' => $data['quantity'],
+                'category_id' => $data['category_id'],
+                'image' => $image
+            ];
+            
+            $stmt = $this->db->query($sql, $params);
+            return true;
+        } catch (PDOException $e) {
+            error_log("Error adding product: " . $e->getMessage());
+            return false;
+        }
+    }
+
+    public function deleteProduct($id) {
+        try {
+            $sql = "DELETE FROM products WHERE id = :id";
+            $stmt = $this->db->query($sql, ['id' => $id]);
+            return true;
+        } catch (PDOException $e) {
+            error_log("Error deleting product: " . $e->getMessage());
+            return false;
+        }
     }
 }
+
+?>
+</pre>

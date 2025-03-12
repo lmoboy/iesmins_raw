@@ -39,7 +39,7 @@ echo "Created product with ID: {$productId}\n";
 
 // Example 3: Reading users with conditions
 echo "\n=== Reading users ===\n";
-$conditions = ['email' => 'john@example.com'];
+$conditions = ['email' => 'admin@admin.admin'];
 $users = $db->read('users', $conditions);
 echo "Found users:\n";
 print_r($users);
