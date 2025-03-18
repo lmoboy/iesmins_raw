@@ -32,7 +32,7 @@ $productData = [
     'price' => 999.99,
     'quantity' => 10,
     'image' => 'laptop.jpeg',
-    'category' => 'Electronics'
+    'category_id' => '1'
 ];
 $productId = $db->create('products', $productData);
 echo "Created product with ID: {$productId}\n";

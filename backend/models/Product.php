@@ -15,16 +15,22 @@ class Product {
         $limit = (int)$limit;
         $params = ['limit' => $limit, 'offset' => $offset];
         
+        $sql = "SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id ";
+        
         if (!empty($search)) {
-            $sql = "SELECT p.*, c.name as category_name FROM products p 
-                   LEFT JOIN categories c ON p.category_id = c.id 
-                   WHERE p.name LIKE :search LIMIT :limit OFFSET :offset";
-            $params['search'] = "%{$search}%";
-        } else {
-            $sql = "SELECT p.*, c.name as category_name FROM products p 
-                   LEFT JOIN categories c ON p.category_id = c.id 
-                   LIMIT :limit OFFSET :offset";
+            // Check if search is numeric (likely a category ID)
+            if (is_numeric($search)) {
+                $sql .= "WHERE p.category_id = :category_id ";
+                $params['category_id'] = $search;
+            } else {
+                // Text search for product name
+                $sql .= "WHERE p.name LIKE :search ";
+                $params['search'] = "%{$search}%";
+            }
         }
+        
+        $sql .= "LIMIT :limit OFFSET :offset";
         
         $stmt = $this->db->query($sql, $params);
         return $stmt->fetchAll();
@@ -38,9 +44,23 @@ class Product {
         return $stmt->fetch();
     }
 
-    public function getTotalProducts() {
+    public function getTotalProducts($search = '') {
+        $params = [];
         $sql = "SELECT COUNT(*) as total FROM products";
-        $stmt = $this->db->query($sql);
+        
+        if (!empty($search)) {
+            // Check if search is numeric (likely a category ID)
+            if (is_numeric($search)) {
+                $sql .= " WHERE category_id = :category_id";
+                $params['category_id'] = $search;
+            } else {
+                // Text search for product name
+                $sql .= " WHERE name LIKE :search";
+                $params['search'] = "%{$search}%";
+            }
+        }
+        
+        $stmt = $this->db->query($sql, $params);
         $result = $stmt->fetch();
         return $result['total'];
     }

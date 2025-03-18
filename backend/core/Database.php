@@ -47,6 +47,9 @@ class Database
     {
         $this->debug_log("Generating database tables");
         
+
+
+
         $sql = 'CREATE TABLE IF NOT EXISTS `categories` (
             `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
             `name` varchar(255) NOT NULL,

@@ -5,7 +5,7 @@ $product = new Product();
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $limit = 12;
 $search = isset($_GET['search']) ? trim($_GET['search']) : '';
-
+if($search == '') $search = isset($_GET['category']) ? trim($_GET['category']) : '';
 $products = $product->getAllProducts($page, $limit, $search);
 $totalProducts = $product->getTotalProducts();
 $totalPages = ceil($totalProducts / $limit);
@@ -64,6 +64,7 @@ $categories = $product->getCategories();
             <div class="product-card">
                 <img src="/public/uploads/<?= htmlspecialchars($product['image']) ?>" 
                      alt="<?= htmlspecialchars($product['name']) ?>" 
+                     onerror="this.src='/public/uploads/wtf.png';"
                      class="product-image">
                 <div class="product-info">
                     <h3><?= htmlspecialchars($product['name']) ?></h3>

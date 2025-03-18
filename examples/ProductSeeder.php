@@ -11,7 +11,7 @@ class ProductSeeder {
             'price' => 79.99,
             'quantity' => 25,
             'image' => 'classical-white-sneakers.jpg',
-            'category' => 'Footwear'
+            'category' => '3'
         ],
         [
             'name' => 'Leather Messenger Bag',
@@ -19,7 +19,7 @@ class ProductSeeder {
             'price' => 129.99,
             'quantity' => 15,
             'image' => 'leather-messenger-bag.jpg',
-            'category' => 'Accessories'
+            'category' => '2'
         ],
         [
             'name' => 'Wireless Headphones',
@@ -27,7 +27,7 @@ class ProductSeeder {
             'price' => 199.99,
             'quantity' => 30,
             'image' => 'wireless-headphones.jpg',
-            'category' => 'Electronics'
+            'category' => '1'
         ],
         [
             'name' => 'Smart Watch',
@@ -35,7 +35,7 @@ class ProductSeeder {
             'price' => 249.99,
             'quantity' => 20,
             'image' => 'smart-watch.jpg',
-            'category' => 'Electronics'
+            'category' => '1'
         ],
         [
             'name' => 'Laptop Backpack',
@@ -43,7 +43,7 @@ class ProductSeeder {
             'price' => 89.99,
             'quantity' => 40,
             'image' => 'laptop-backpack.jpg',
-            'category' => 'Accessories'
+            'category' => '2'
         ],
         [
             'name' => 'Portable Power Bank',
@@ -51,7 +51,7 @@ class ProductSeeder {
             'price' => 49.99,
             'quantity' => 50,
             'image' => 'portable-power-bank.jpg',
-            'category' => 'Electronics'
+            'category' => '1'
         ],
         [
             'name' => 'Bluetooth Speaker',
@@ -59,7 +59,7 @@ class ProductSeeder {
             'price' => 159.99,
             'quantity' => 35,
             'image' => 'bluetooth-speaker.jpeg',
-            'category' => 'Electronics'
+            'category' => '1'
         ],
         [
             'name' => 'Gaming Mouse',
@@ -67,7 +67,7 @@ class ProductSeeder {
             'price' => 69.99,
             'quantity' => 45,
             'image' => 'gaming-mouse.jpg',
-            'category' => 'Electronics'
+            'category' => '1'
         ]
     ];
 
@@ -84,7 +84,7 @@ class ProductSeeder {
         $this->db->query("DELETE FROM products");
 
         // Insert new products
-        $sql = "INSERT INTO products (name, description, price, quantity, image, category) VALUES (:name, :description, :price, :quantity, :image, :category)";
+        $sql = "INSERT INTO products (name, description, price, quantity, image, category_id) VALUES (:name, :description, :price, :quantity, :image, :category)";
         
         foreach ($this->products as $product) {
             $this->db->query($sql, [

@@ -35,7 +35,7 @@ if (!$productData) {
         <div class="product-detail-grid">
             <div class="product-image-container">
                 <img src="/public/uploads/<?php echo htmlspecialchars($productData['image']); ?>" 
-                     alt="<?php echo htmlspecialchars($productData['name']); ?>" 
+                     alt="/public/uploads/wtf.png" 
                      class="product-detail-image">
             </div>
             <div class="product-detail-info">
