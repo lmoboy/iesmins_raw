@@ -1,4 +1,3 @@
-<pre>
 
 <?php
 require_once "products.php"; 
@@ -11,7 +10,6 @@ $product = new Product();
 $categories = $product->getCategories();
 // var_dump($categories);
 ?>
-</pre>
 <div class="container mt-4">
     <h2>Product Management</h2>
     
@@ -39,7 +37,7 @@ $categories = $product->getCategories();
                 
                 <div class="form-group mb-3">
                     <label for="description">Description</label>
-                    <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+                    <textarea class="form-control" id="description" name="description" rows="3" maxlength="255" required></textarea>
                 </div>
                 
                 <div class="form-group mb-3">

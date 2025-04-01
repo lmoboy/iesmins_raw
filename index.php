@@ -40,17 +40,29 @@ $router->addRoute('POST', '/admin/products/add', function() {
         header('Location: /authentification/login');
         exit();
     }
-    $database = new Database();
-    $db = $database->connect();
     
-    $name = $_POST['name'];
-    $description = $_POST['description'];
-    $price = $_POST['price'];
-    $quantity = $_POST['quantity'];
-    $category_id = $_POST['category_id'];
+    // Create product instance
+    $product = new Product();
     
-    $stmt = $db->prepare("INSERT INTO products (name, description, price, quantity, category_id) VALUES (?, ?, ?, ?, ?)");
-    $stmt->execute([$name, $description, $price, $quantity, $category_id]);
+    // Prepare data from form
+    $data = [
+        'name' => $_POST['name'],
+        'description' => $_POST['description'],
+        'price' => $_POST['price'],
+        'quantity' => $_POST['quantity'],
+        'category_id' => $_POST['category_id']
+    ];
+    
+    // Handle image upload
+    $imageFile = isset($_FILES['image']) ? $_FILES['image'] : null;
+    
+    // Add product with image
+    $result = $product->addProduct($data, $imageFile);
+    
+    if (!$result) {
+        // Handle error (could add flash message here)
+        $_SESSION['error'] = 'Failed to add product. Please try again.';
+    }
     
     header('Location: /admin/products');
     exit();

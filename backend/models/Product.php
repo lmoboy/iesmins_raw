@@ -1,4 +1,4 @@
-<pre>
+
 
 <?php
 class Product {
@@ -97,8 +97,36 @@ class Product {
         return $stmt->fetchAll();
     }
 
-    public function addProduct($data, $image) {
+    public function addProduct($data, $imageFile) {
         try {
+            // Handle image upload
+            $imageName = 'wtf.png'; // Default image
+            
+            if ($imageFile && $imageFile['error'] == 0) {
+                // Validate file type
+                $allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/jpg'];
+                $fileType = $imageFile['type'];
+                
+                if (!in_array($fileType, $allowedTypes)) {
+                    throw new Exception("Invalid file type. Only JPG, JPEG, PNG and GIF are allowed.");
+                }
+                
+                // Validate file size (max 5MB)
+                if ($imageFile['size'] > 5 * 1024 * 1024) {
+                    throw new Exception("File is too large. Maximum size is 5MB.");
+                }
+                
+                // Generate unique filename
+                $extension = pathinfo($imageFile['name'], PATHINFO_EXTENSION);
+                $imageName = uniqid() . '.' . $extension;
+                $uploadPath = $_SERVER['DOCUMENT_ROOT'] . '/public/uploads/' . $imageName;
+                
+                // Move uploaded file
+                if (!move_uploaded_file($imageFile['tmp_name'], $uploadPath)) {
+                    throw new Exception("Failed to upload image.");
+                }
+            }
+            
             $sql = "INSERT INTO products (name, description, price, quantity, category_id, image) 
                     VALUES (:name, :description, :price, :quantity, :category_id, :image)";
             
@@ -108,12 +136,12 @@ class Product {
                 'price' => $data['price'],
                 'quantity' => $data['quantity'],
                 'category_id' => $data['category_id'],
-                'image' => $image
+                'image' => $imageName
             ];
             
             $stmt = $this->db->query($sql, $params);
             return true;
-        } catch (PDOException $e) {
+        } catch (Exception $e) {
             error_log("Error adding product: " . $e->getMessage());
             return false;
         }
@@ -132,4 +160,3 @@ class Product {
 }
 
 ?>
-</pre>
