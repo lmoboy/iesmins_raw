@@ -100,6 +100,36 @@ footer {
     background: var(--primary-color);
 }
 
+/* Cards and Modals */
+.card {
+    background-color: var(--card-bg);
+    color: var(--card-text);
+}
+
+.card-header {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    color: var(--card-text);
+}
+
+.modal-header {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.modal-footer {
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--text-color);
+}
+
+.table {
+    color: var(--card-text);
+}
+
 /* Stats Grid */
 .stats-grid {
     display: grid;
@@ -263,7 +293,13 @@ footer {
     background-color: var(--secondary-color);
     color: white;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+    min-width: 80px;
+    text-align: center;
+    margin: 0.25rem;
+    border: none;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 }
 
 /* Login Form */
@@ -327,7 +363,41 @@ footer {
 
 /* Inline Form */
 .inline-form {
-    display: inline;
+    display: inline-block;
+}
+
+/* Admin action buttons */
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Button variants */
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+}
+
+.btn-info {
+    background-color: #1abc9c;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 /* 404 Page */
@@ -366,8 +436,64 @@ footer {
     text-decoration: underline;
 }
 
-.btn:hover {
-    background-color: var(--primary-color);
+/* Button hover states with specific colors */
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-warning:hover {
+    background-color: #d35400;
+}
+
+.btn-info:hover {
+    background-color: #16a085;
+}
+
+/* Modal styles for confirmation */
+.modal-confirm {
+    color: #636363;
+}
+
+.modal-confirm .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-confirm .modal-header {
+    border-bottom: none;
+    position: relative;
+}
+
+.modal-confirm .modal-footer {
+    border-top: none;
+    padding: 10px 15px 20px;
+    justify-content: center;
+}
+
+.modal-confirm .icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    z-index: 9;
+    text-align: center;
+    border: 3px solid #f15e5e;
+}
+
+.modal-confirm .icon-box i {
+    color: #f15e5e;
+    font-size: 46px;
+    display: inline-block;
+    margin-top: 13px;
 }
 
 /* Product Detail Page */

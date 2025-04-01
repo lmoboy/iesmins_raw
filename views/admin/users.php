@@ -73,12 +73,13 @@ $users = $user->getAllUsers();
                             <td><?php echo htmlspecialchars($user['email']); ?></td>
                             <td><?php echo $user['role'] === 1 ? 'Administrator' : 'User'; ?></td>
                             <td>
-                                <form action="/admin/users/delete" method="POST" class="inline-form">
-                                    <input type="hidden" name="user_id" value="<?php echo $user['id']; ?>">
-                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this user?')">
+                                <div class="action-buttons">
+                                    <button type="button" class="btn btn-danger delete-user"
+                                            data-id="<?php echo $user['id']; ?>"
+                                            data-name="<?php echo htmlspecialchars($user['name']); ?>">
                                         Delete
                                     </button>
-                                </form>
+                                </div>
                             </td>
                         </tr>
                         <?php endforeach; ?>                        
@@ -88,3 +89,58 @@ $users = $user->getAllUsers();
         </div>
     </div>
 </div>
+
+<!-- Delete User Modal -->
+<div class="modal fade" id="deleteUserModal" tabindex="-1" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteUserModalLabel">Confirm Deletion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="icon-box">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                </div>
+                <h4 class="modal-title mt-3">Are you sure?</h4>
+                <p>Do you really want to delete the user <strong id="delete-user-name"></strong>? This action cannot be undone.</p>
+                <form action="/admin/users/delete" method="POST" id="deleteUserForm">
+                    <input type="hidden" name="user_id" id="delete-user-id">
+                </form>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Yes, Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all delete buttons
+        const deleteButtons = document.querySelectorAll('.delete-user');
+        const deleteModal = new bootstrap.Modal(document.getElementById('deleteUserModal'));
+        
+        // Add click event to each delete button
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Get data attributes
+                const id = this.getAttribute('data-id');
+                const name = this.getAttribute('data-name');
+                
+                // Set values in the modal
+                document.getElementById('delete-user-id').value = id;
+                document.getElementById('delete-user-name').textContent = name;
+                
+                // Show the modal
+                deleteModal.show();
+            });
+        });
+        
+        // Handle confirm delete button
+        document.getElementById('confirmDeleteBtn').addEventListener('click', function() {
+            document.getElementById('deleteUserForm').submit();
+        });
+    });
+</script>

@@ -84,6 +84,44 @@ $router->addRoute('POST', '/admin/products/delete', function() {
     exit();
 });
 
+$router->addRoute('GET', '/admin/categories', function() {
+    if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
+        header('Location: /authentification/login');
+        exit();
+    }
+    View::render('admin/categories');
+});
+
+$router->addRoute('POST', '/admin/categories/add', function() {
+    if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
+        header('Location: /authentification/login');
+        exit();
+    }
+    require_once 'backend/admin/categories.php';
+    $controller = new AdminCategoriesController();
+    $controller->add();
+});
+
+$router->addRoute('POST', '/admin/categories/update', function() {
+    if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
+        header('Location: /authentification/login');
+        exit();
+    }
+    require_once 'backend/admin/categories.php';
+    $controller = new AdminCategoriesController();
+    $controller->update();
+});
+
+$router->addRoute('POST', '/admin/categories/delete', function() {
+    if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
+        header('Location: /authentification/login');
+        exit();
+    }
+    require_once 'backend/admin/categories.php';
+    $controller = new AdminCategoriesController();
+    $controller->delete();
+});
+
 $router->addRoute('GET', '/admin/users', function() {
     if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
         header('Location: /authentification/login');

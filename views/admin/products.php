@@ -89,12 +89,13 @@ $categories = $product->getCategories();
                             <td>$<?php echo htmlspecialchars(number_format($product['price'], 2)); ?></td>
                             <td><?php echo htmlspecialchars($product['quantity']); ?></td>
                             <td>
-                                <form action="/admin/products/delete" method="POST" class="inline-form">
-                                    <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
-                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this product?')">
+                                <div class="action-buttons">
+                                    <button type="button" class="btn btn-danger delete-product"
+                                            data-id="<?php echo $product['id']; ?>"
+                                            data-name="<?php echo htmlspecialchars($product['name']); ?>">
                                         Delete
-                                    </button>
-                                </form>
+                                        </button>
+                                </div>
                             </td>
                         </tr>
                         <?php endforeach; ?>
@@ -104,3 +105,58 @@ $categories = $product->getCategories();
         </div>
     </div>
 </div>
+
+<!-- Delete Product Modal -->
+<div class="modal fade" id="deleteProductModal" tabindex="-1" aria-labelledby="deleteProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteProductModalLabel">Confirm Deletion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="icon-box">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                </div>
+                <h4 class="modal-title mt-3">Are you sure?</h4>
+                <p>Do you really want to delete the product <strong id="delete-product-name"></strong>? This action cannot be undone.</p>
+                <form action="/admin/products/delete" method="POST" id="deleteProductForm">
+                    <input type="hidden" name="product_id" id="delete-product-id">
+                </form>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Yes, Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all delete buttons
+        const deleteButtons = document.querySelectorAll('.delete-product');
+        const deleteModal = new bootstrap.Modal(document.getElementById('deleteProductModal'));
+        
+        // Add click event to each delete button
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Get data attributes
+                const id = this.getAttribute('data-id');
+                const name = this.getAttribute('data-name');
+                
+                // Set values in the modal
+                document.getElementById('delete-product-id').value = id;
+                document.getElementById('delete-product-name').textContent = name;
+                
+                // Show the modal
+                deleteModal.show();
+            });
+        });
+        
+        // Handle confirm delete button
+        document.getElementById('confirmDeleteBtn').addEventListener('click', function() {
+            document.getElementById('deleteProductForm').submit();
+        });
+    });
+</script>
