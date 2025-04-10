@@ -12,6 +12,7 @@ $totalPages = ceil($totalProducts / $limit);
 $lowStockProducts = $product->getLowStockProducts();
 $recentOrders = $product->getRecentOrders();
 $categories = $product->getCategories();
+// var_dump($recentOrders);
 ?>
 
 <div class="container">

@@ -24,9 +24,27 @@ if (!$productData) {
     header('Location: /products');
     exit();
 }
+
+$message = '';
+if (isset($_POST['order']) && isset($_POST['quantity'])) {
+    $quantity = (int)$_POST['quantity'];
+    if ($product->orderProduct($id, $quantity)) {
+        $message = 'Order placed successfully!';
+        // Refresh product data after order
+        $productData = $product->getProductById($id);
+    } else {
+        $message = 'Failed to place order. Please try again.';
+    }
+}
 ?>
 
 <div class="container">
+    <?php if ($message): ?>
+        <div class="alert <?= strpos($message, 'Failed') === false ? 'alert-success' : 'alert-danger' ?>">
+            <?= htmlspecialchars($message) ?>
+        </div>
+    <?php endif; ?>
+    
     <a href="/products" class="back-link">
         <span class="back-arrow">←</span> Back to Products
     </a>
@@ -51,15 +69,62 @@ if (!$productData) {
                 </div>
 
                 <?php if ($productData['quantity'] > 0): ?>
-                <button class="btn btn-primary">
-                    Add to Cart
-                </button>
+                    <form action="/products/<?= $id ?>" method="POST" class="order-form">
+                        <div class="quantity-input">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" 
+                                   id="quantity" 
+                                   name="quantity" 
+                                   min="1" 
+                                   max="<?= $productData['quantity'] ?>" 
+                                   value="1" 
+                                   required>
+                        </div>
+                        <button type="submit" name="order" class="btn btn-primary">
+                            Add to Cart
+                        </button>
+                    </form>
                 <?php else: ?>
-                <button class="btn btn-disabled" disabled>
-                    Out of Stock
-                </button>
+                    <button class="btn btn-disabled" disabled>
+                        Out of Stock
+                    </button>
                 <?php endif; ?>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+.order-form {
+    margin-top: 1rem;
+}
+.quantity-input {
+    margin-bottom: 1rem;
+}
+.quantity-input label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+.quantity-input input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+</style>

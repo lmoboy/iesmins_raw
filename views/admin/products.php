@@ -8,7 +8,6 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 1) {
 
 $product = new Product();
 $categories = $product->getCategories();
-// var_dump($categories);
 ?>
 <div class="container mt-4">
     <h2>Product Management</h2>
