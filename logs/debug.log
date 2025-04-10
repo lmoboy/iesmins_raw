@@ -516,3 +516,305 @@
 [2025-04-10 09:58:24] [ROUTER] [info] Route added: GET /authentification/logout
 [2025-04-10 09:58:24] [ROUTER] [info] Handling request: GET /public/uploads/67ebb81b6f850.jpg
 [2025-04-10 09:58:24] [ROUTER] [warning] No matching route found for: GET /public/uploads/67ebb81b6f850.jpg
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:00:05] [ROUTER] [info] Handling request: GET /products/44
+[2025-04-10 10:00:05] [ROUTER] [info] Route matched: GET /products/:id
+[2025-04-10 10:00:05] [VIEW] [info] Rendering view: products/detail
+[2025-04-10 10:00:05] [VIEW] [info] Loading view file: views/products/detail.php
+[2025-04-10 10:00:05] [DB] [info] Attempting database connection
+[2025-04-10 10:00:05] [DB] [info] Database connection successful
+[2025-04-10 10:00:05] [DB] [info] Executing query: SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id 
+               WHERE p.id = :id
+[2025-04-10 10:00:05] [DB] [info] With parameters: {"id":44}
+[2025-04-10 10:00:05] [DB] [info] Query executed successfully
+[2025-04-10 10:00:05] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:00:05] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:00:05] [ROUTER] [info] Handling request: GET /favicon.ico
+[2025-04-10 10:00:05] [ROUTER] [warning] No matching route found for: GET /favicon.ico
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /producs/order/:id
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:03:23] [ROUTER] [info] Handling request: POST /products/44
+[2025-04-10 10:03:23] [ROUTER] [warning] No matching route found for: POST /products/44
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: POST /producs/order/:id
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:03:23] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:03:23] [ROUTER] [info] Handling request: GET /favicon.ico
+[2025-04-10 10:03:23] [ROUTER] [warning] No matching route found for: GET /favicon.ico
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: POST /producs/order/:id
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:03:40] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:03:40] [ROUTER] [info] Handling request: GET /products/44
+[2025-04-10 10:03:40] [ROUTER] [info] Route matched: GET /products/:id
+[2025-04-10 10:03:40] [VIEW] [info] Rendering view: products/detail
+[2025-04-10 10:03:40] [VIEW] [info] Loading view file: views/products/detail.php
+[2025-04-10 10:03:41] [DB] [info] Attempting database connection
+[2025-04-10 10:03:41] [DB] [info] Database connection successful
+[2025-04-10 10:03:41] [DB] [info] Executing query: SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id 
+               WHERE p.id = :id
+[2025-04-10 10:03:41] [DB] [info] With parameters: {"id":44}
+[2025-04-10 10:03:41] [DB] [info] Query executed successfully
+[2025-04-10 10:03:41] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: POST /producs/order/:id
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:03:42] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:03:42] [ROUTER] [info] Handling request: POST /products/order/44
+[2025-04-10 10:03:42] [ROUTER] [warning] No matching route found for: POST /products/order/44
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: POST /products/order/:id
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:04:51] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:04:51] [ROUTER] [info] Handling request: GET /products/44
+[2025-04-10 10:04:51] [ROUTER] [info] Route matched: GET /products/:id
+[2025-04-10 10:04:51] [VIEW] [info] Rendering view: products/detail
+[2025-04-10 10:04:51] [VIEW] [info] Loading view file: views/products/detail.php
+[2025-04-10 10:04:51] [DB] [info] Attempting database connection
+[2025-04-10 10:04:51] [DB] [info] Database connection successful
+[2025-04-10 10:04:51] [DB] [info] Executing query: SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id 
+               WHERE p.id = :id
+[2025-04-10 10:04:51] [DB] [info] With parameters: {"id":44}
+[2025-04-10 10:04:51] [DB] [info] Query executed successfully
+[2025-04-10 10:04:51] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /products/order/:id
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:04:52] [ROUTER] [info] Handling request: POST /products/order/44
+[2025-04-10 10:04:52] [ROUTER] [info] Route matched: POST /products/order/:id
+[2025-04-10 10:04:52] [DB] [info] Attempting database connection
+[2025-04-10 10:04:52] [DB] [info] Database connection successful
+[2025-04-10 10:04:52] [DB] [info] Executing query: START TRANSACTION
+[2025-04-10 10:04:52] [DB] [info] Query executed successfully
+[2025-04-10 10:04:52] [DB] [info] Executing query: SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id 
+               WHERE p.id = :id
+[2025-04-10 10:04:52] [DB] [info] With parameters: {"id":"44"}
+[2025-04-10 10:04:52] [DB] [info] Query executed successfully
+[2025-04-10 10:04:52] [DB] [info] Executing query: INSERT INTO orders (product_id, quantity, total_price) 
+                    VALUES (:product_id, :quantity, :total_price)
+[2025-04-10 10:04:52] [DB] [info] With parameters: {"product_id":"44","quantity":"1","total_price":79.99}
+[2025-04-10 10:04:52] [DB] [info] Query executed successfully
+[2025-04-10 10:04:52] [DB] [info] Executing query: UPDATE products SET quantity = quantity - :ordered_quantity 
+                    WHERE id = :product_id AND quantity >= :ordered_quantity
+[2025-04-10 10:04:52] [DB] [info] With parameters: {"ordered_quantity":"1","product_id":"44"}
+[2025-04-10 10:04:52] [DB] [info] Query executed successfully
+[2025-04-10 10:04:52] [DB] [info] Executing query: COMMIT
+[2025-04-10 10:04:52] [DB] [info] Query executed successfully
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: POST /products/order/:id
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:04:52] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:04:52] [ROUTER] [info] Handling request: GET /products/44
+[2025-04-10 10:04:52] [ROUTER] [info] Route matched: GET /products/:id
+[2025-04-10 10:04:52] [VIEW] [info] Rendering view: products/detail
+[2025-04-10 10:04:52] [VIEW] [info] Loading view file: views/products/detail.php
+[2025-04-10 10:04:52] [DB] [info] Attempting database connection
+[2025-04-10 10:04:52] [DB] [info] Database connection successful
+[2025-04-10 10:04:52] [DB] [info] Executing query: SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id 
+               WHERE p.id = :id
+[2025-04-10 10:04:52] [DB] [info] With parameters: {"id":44}
+[2025-04-10 10:04:52] [DB] [info] Query executed successfully
+[2025-04-10 10:04:52] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /products/order/:id
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:04:55] [ROUTER] [info] Handling request: GET /products
+[2025-04-10 10:04:55] [ROUTER] [info] Route matched: GET /products
+[2025-04-10 10:04:55] [VIEW] [info] Rendering view: products/index
+[2025-04-10 10:04:55] [VIEW] [info] Loading view file: views/products/index.php
+[2025-04-10 10:04:55] [DB] [info] Attempting database connection
+[2025-04-10 10:04:55] [DB] [info] Database connection successful
+[2025-04-10 10:04:55] [DB] [info] Executing query: SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id LIMIT :limit OFFSET :offset
+[2025-04-10 10:04:55] [DB] [info] With parameters: {"limit":12,"offset":0}
+[2025-04-10 10:04:55] [DB] [info] Query executed successfully
+[2025-04-10 10:04:55] [DB] [info] Executing query: SELECT COUNT(*) as total FROM products
+[2025-04-10 10:04:55] [DB] [info] Query executed successfully
+[2025-04-10 10:04:55] [DB] [info] Executing query: SELECT p.*, c.name as category_name FROM products p 
+               LEFT JOIN categories c ON p.category_id = c.id 
+               WHERE p.quantity <= :threshold ORDER BY p.quantity ASC
+[2025-04-10 10:04:55] [DB] [info] With parameters: {"threshold":20}
+[2025-04-10 10:04:55] [DB] [info] Query executed successfully
+[2025-04-10 10:04:55] [DB] [info] Executing query: SELECT o.*, p.name as product_name, p.image as product_image 
+            FROM orders o 
+            JOIN products p ON o.product_id = p.id 
+            ORDER BY o.created_at DESC 
+            LIMIT :limit
+[2025-04-10 10:04:55] [DB] [info] With parameters: {"limit":5}
+[2025-04-10 10:04:55] [DB] [info] Query executed successfully
+[2025-04-10 10:04:55] [DB] [info] Executing query: SELECT * FROM categories ORDER BY id
+[2025-04-10 10:04:55] [DB] [info] Query executed successfully
+[2025-04-10 10:04:55] [VIEW] [info] Loading layout: views/layouts/default.php
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /backend/authenticate
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /backend/migrate
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /admin/products
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/products/add
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/products/delete
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /admin/categories
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/categories/add
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/categories/update
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/categories/delete
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /admin/users
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/users/add
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /admin/users/delete
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: POST /products/order/:id
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /products
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /products/:id
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /authentification/login
+[2025-04-10 10:04:55] [ROUTER] [info] Route added: GET /authentification/logout
+[2025-04-10 10:04:55] [ROUTER] [info] Handling request: GET /public/uploads/67ebb81b6f850.jpg
+[2025-04-10 10:04:55] [ROUTER] [warning] No matching route found for: GET /public/uploads/67ebb81b6f850.jpg

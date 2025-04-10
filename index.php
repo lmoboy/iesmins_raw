@@ -174,6 +174,21 @@ $router->addRoute('GET', '/', function() {
     View::render('products/index');
 });
 
+
+$router->addRoute("POST", '/products/order/:id', function($params) {
+    if (!isset($_SESSION['user'])) {
+        header('Location: /authentification/login');
+        exit();
+    }
+    $product_id = $params['id'];
+    $quantity = $_POST['quantity'];
+    $product = new Product();
+    $product->orderProduct($product_id, $quantity);
+    header('Location: /products/' . $product_id);
+    exit();
+});
+
+
 $router->addRoute('GET', '/products', function() {
     View::render('products/index');
 });

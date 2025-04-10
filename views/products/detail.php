@@ -69,7 +69,7 @@ if (isset($_POST['order']) && isset($_POST['quantity'])) {
                 </div>
 
                 <?php if ($productData['quantity'] > 0): ?>
-                    <form action="/products/<?= $id ?>" method="POST" class="order-form">
+                    <form action="/products/order/<?= $id ?>" method="POST" class="order-form">
                         <div class="quantity-input">
                             <label for="quantity">Quantity:</label>
                             <input type="number" 
